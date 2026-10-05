@@ -1,0 +1,27 @@
+{
+  "title": "Coconut Meets a Visitor (animation test)",
+  "fps": 24,
+  "duration": 11,
+  "background": "room",
+  "foreground": "tunnel",
+  "blinks": [1.0, 4.7, 6.9, 8.9],
+  "keys": {
+    "offsetY":   [[0,0],[2.5,0],[3.3,235],[5.6,235],[6.6,150],[7.6,150],[8.6,0]],
+    "eyeWide":   [[0,0],[2.0,0],[2.2,0.5],[2.6,0.35],[5.6,0.35],[6.0,0]],
+    "grumpy":    [[0,1],[2.0,1],[2.2,0.1],[7.8,0.1],[8.2,1],[8.9,1],[9.5,0.45]],
+    "earAngle":  [[0,0],[2.0,0],[2.2,-22],[2.6,-10],[5.5,-10],[6.0,0]],
+    "tilt":      [[0,0],[6.0,0],[6.5,6],[7.4,6],[7.8,0]],
+    "tailAmp":   [[0,12],[2.0,12],[2.2,22],[2.6,12]],
+    "tailSpeed": [[0,2.4],[2.0,2.4],[2.2,7.4],[2.6,2.4]]
+  },
+  "bubbles": [
+    { "text": "Ding dong!", "start": 2.0, "end": 3.4 },
+    { "text": "Hmm... who is it?", "start": 6.0, "end": 7.5 },
+    { "text": "Hello... a little.", "start": 8.7, "end": 9.9 }
+  ],
+  "captions": [
+    { "text": "Coconut the Cat", "start": 0, "end": 1.8 },
+    { "text": "Coconut is a little shy with visitors.", "start": 3.4, "end": 5.5 },
+    { "text": "But she always warms up... slowly.", "start": 9.2, "end": 11 }
+  ]
+}

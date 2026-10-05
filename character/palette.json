@@ -1,0 +1,20 @@
+{
+  "fur": "#6d7480",
+  "furShadow": "#5f6672",
+  "muzzle": "#a79d94",
+  "chest": "#f4f1ea",
+  "earInner": "#c99a98",
+  "nose": "#c98f8a",
+  "eyeLeft": "#b9d37c",
+  "eyeRight": "#d3e079",
+  "pupil": "#1b1f24",
+  "whisker": "#f2efe8",
+  "mouthLine": "#4b4f58",
+  "mouthInside": "#7a3b45",
+  "collar": "#efe2b5",
+  "collarBead": "#e7d79f",
+  "flower": "#f6c640",
+  "flowerCenter": "#ffffff",
+  "bell": "#bdb8ad",
+  "bellStroke": "#8f8a80"
+}
