@@ -2,8 +2,11 @@
 
 Format: 2-3 dk, giriş şarkısı + küçük sorun + denemeler + çözüm + kısa kapanış. Sakin tempo, tekrarlı cümleler. Her fikir gerçek Coconut'ın huyundan gelir.
 
+## EP00 (yapıldı)
+**Meet Coconut!** Kanal tanıtımı, 70 sn. Senaryo: `docs/scripts/ep00-meet-coconut.md`.
+
 ## Coconut'ın gerçek huyundan (öncelikli)
-1. **Coconut Meets a Visitor:** Kapı çalar, saklanır, misafir sabırla bekler, yavaşça çıkar. *Ders: yeni biriyle tanışmak zaman alır.* **(PİLOT)**
+1. **Coconut Meets a Visitor:** Kapı çalar, saklanır, misafir sabırla bekler, yavaşça çıkar. *Ders: yeni biriyle tanışmak zaman alır.* **(EP01)**
 2. **Coconut Says "Not Yet":** Alanına izinsiz gelen biri. *Ders: nazikçe sınır koymak.*
 3. **Mom and Dad's Cozy Bed:** Gece uyku rutini, sarılma. *Ders: güven ve sevgi. Uyku öncesi sakin bölüm.*
 4. **Coconut and the Little Neighbor:** Komşu çocuk her gün biraz daha yakınlaşır. *Ders: sabırla dostluk.*
