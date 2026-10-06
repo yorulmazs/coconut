@@ -53,3 +53,20 @@ Coconut konuşurken ağız şekilleri otomatik değişir. Ses dosyası videoya e
 ## Önemli
 - Karakteri **sadece** `character/coconut.js` ve `character/palette.json` içinde değiştirin. Ayrıntılar: `CHARACTER_BIBLE.md`.
 - Yeni bir mekân için `scenes/room.js` içine yeni bir arka plan ekleyin.
+
+## Ses üretimi (Kokoro) ve ağız verisi (Rhubarb)
+
+Her bölümün sesini bir `*.voice.json` dosyası tanımlar (kim, ne zaman, ne diyor). Örnek: `episodes/ep00-meet-coconut-10s.voice.json`.
+
+Kurulum (bir kez, Mac):
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+```
+Rhubarb Lip Sync'in Mac sürümünü https://github.com/DanielSWolf/rhubarb-lip-sync/releases adresinden indirip açın.
+
+Üretim:
+```bash
+RHUBARB=/yol/rhubarb python tools/make_voice.py episodes/ep00-meet-coconut-10s.voice.json
+```
+Çıktılar `out/voice/<bolum>/` altına (her satır ayrı WAV, `mix.wav`, `report.json` zamanlama raporu) ve `episodes/<bolum>.mouth.json` olarak yazılır. Kokoro model dosyaları (~350 MB) ilk çalıştırmada `models/` klasörüne indirilir (git'e girmez). Bölüm JSON'unda `audio` ve `mouthCues` alanları bunlara bağlıdır.

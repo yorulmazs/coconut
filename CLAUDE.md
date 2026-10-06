@@ -68,5 +68,6 @@ Bkz. `docs/STATUS.md`. Her oturum sonunda orayı güncelle.
 npm install && npx playwright install chromium   # bir kez
 npm run pilot                                     # pilot videoyu üret
 node render.js episodes/<bolum>.json              # bir bölümü üret
+RHUBARB=/yol/rhubarb python tools/make_voice.py episodes/<bolum>.voice.json   # ses (Kokoro af_heart) + ağız verisi (Rhubarb)
 ```
-Not: Bulut sandbox'ta `CHROMIUM_PATH=/opt/pw-browsers/chromium` gerekir. Mac'te denenmedi, ilk çalıştırmada hata olursa düzelt.
+Not: Bulut sandbox'ta `CHROMIUM_PATH=/opt/pw-browsers/chromium` gerekir. Ses betiği (`tools/make_voice.py`) Linux sandbox'ta denendi, Mac'te denenmedi, ilk çalıştırmada hata olursa düzelt.

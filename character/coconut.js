@@ -33,7 +33,8 @@ function mouthSVG(shape) {
   const p = palette;
   const m = MOUTHS[shape] || MOUTHS.X;
   if (m.type === 'open') {
-    return `<ellipse cx="480" cy="338" rx="${m.rx}" ry="${m.ry}" fill="${p.mouthInside}" stroke="${p.mouthLine}" stroke-width="3"/>`;
+    // open mouth shapes are scaled up so they stay readable at video size
+    return `<ellipse cx="480" cy="340" rx="${m.rx * 1.35}" ry="${m.ry * 1.35}" fill="${p.mouthInside}" stroke="${p.mouthLine}" stroke-width="3"/>`;
   }
   if (m.type === 'line') {
     return `<path d="M466,336 L494,336" stroke="${p.mouthLine}" stroke-width="3" stroke-linecap="round"/>`;

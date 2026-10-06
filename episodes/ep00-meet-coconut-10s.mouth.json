@@ -1,0 +1,137 @@
+{
+ "metadata": {
+  "generatedBy": "tools/make_voice.py"
+ },
+ "mouthCues": [
+  {
+   "start": 0.0,
+   "end": 3.7,
+   "value": "X"
+  },
+  {
+   "start": 3.7,
+   "end": 3.84,
+   "value": "B"
+  },
+  {
+   "start": 3.84,
+   "end": 3.91,
+   "value": "G"
+  },
+  {
+   "start": 3.91,
+   "end": 4.26,
+   "value": "B"
+  },
+  {
+   "start": 4.26,
+   "end": 4.52,
+   "value": "X"
+  },
+  {
+   "start": 4.52,
+   "end": 6.7,
+   "value": "X"
+  },
+  {
+   "start": 6.7,
+   "end": 6.73,
+   "value": "X"
+  },
+  {
+   "start": 6.73,
+   "end": 6.86,
+   "value": "C"
+  },
+  {
+   "start": 6.86,
+   "end": 7.14,
+   "value": "F"
+  },
+  {
+   "start": 7.14,
+   "end": 7.28,
+   "value": "B"
+  },
+  {
+   "start": 7.28,
+   "end": 7.35,
+   "value": "F"
+  },
+  {
+   "start": 7.35,
+   "end": 7.56,
+   "value": "B"
+  },
+  {
+   "start": 7.56,
+   "end": 7.63,
+   "value": "C"
+  },
+  {
+   "start": 7.63,
+   "end": 7.84,
+   "value": "B"
+  },
+  {
+   "start": 7.84,
+   "end": 7.93,
+   "value": "X"
+  },
+  {
+   "start": 7.93,
+   "end": 8.5,
+   "value": "X"
+  },
+  {
+   "start": 8.5,
+   "end": 8.61,
+   "value": "X"
+  },
+  {
+   "start": 8.61,
+   "end": 8.84,
+   "value": "D"
+  },
+  {
+   "start": 8.84,
+   "end": 8.89,
+   "value": "C"
+  },
+  {
+   "start": 8.89,
+   "end": 9.07,
+   "value": "B"
+  },
+  {
+   "start": 9.07,
+   "end": 9.2,
+   "value": "X"
+  },
+  {
+   "start": 9.2,
+   "end": 9.36,
+   "value": "B"
+  },
+  {
+   "start": 9.36,
+   "end": 9.57,
+   "value": "C"
+  },
+  {
+   "start": 9.57,
+   "end": 9.71,
+   "value": "B"
+  },
+  {
+   "start": 9.71,
+   "end": 9.82,
+   "value": "X"
+  },
+  {
+   "start": 9.82,
+   "end": 10,
+   "value": "X"
+  }
+ ]
+}
