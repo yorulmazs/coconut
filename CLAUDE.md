@@ -8,6 +8,8 @@ Sahibi, kedisi **Coconut**'tan esinlenen bir **çocuk animasyonu YouTube kanalı
 ## Format kararı: sessiz Coconut + anlatıcı (2026-10-06, araştırmaya dayalı)
 **Coconut konuşmaz.** Hikâyeyi **anlatıcı** (Kokoro af_heart) anlatır, Coconut **hareket, ifade ve gerçek kedi sesleriyle** oynar (miyav, mırıltı, "Hmph"; ileride kullanıcının kaydettiği gerçek Coconut sesleri). Konuşma balonu yerine düşünce sembolleri ("!", "?", "...", kalpler). Her bölümün **öğretici bir kazanımı** olsun (duygular, renkler, sayılar, nezaket, rutinler). Gerekçe `docs/RESEARCH.md` "Konuşan mı, sessiz mi" bölümünde.
 
+**"Real Coconut!" kapanışı (kullanıcı kabul etti, 2026-10-06):** Bölüm sonunda 5-10 sn gerçek Coconut videosu, bölümün davranışıyla aynı (örn. EP01 kutu). Kullanıcı çeker. **Sadece evde çekilebilen davranışlar** (veteriner, dışarısı yok). Uygun gerçek video yoksa o bölümde kesit atlanır, sahte çekim yapılmaz. Hep en sonda, sabit geçiş kartıyla, hikâyeye karışmaz. Uygulama (kod, senaryo sahnesi) için ayrıca açık onay gerekir. Gerekçe `docs/RESEARCH.md`.
+
 ## Ana kararlar (tekrar tartışma, değiştirmek için kullanıcıya sor)
 1. **Tutarlılık kuralı:** Coconut sadece `character/coconut.js` + `character/palette.json` ile çizilir. Hiçbir sahnede "yeniden çizilmez". Yapay zekâ video platformları ana karakter için kullanılmaz (tutarlılık riski, çocuk içeriği politikası riski).
 2. **Üretim hattı:** Bölüm = `episodes/*.json` zaman çizelgesi, `render.js` ile MP4. Ağız senkronu Rhubarb Lip Sync (A-H, X) ile.

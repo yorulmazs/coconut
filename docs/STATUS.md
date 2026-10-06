@@ -32,6 +32,8 @@ _Son güncelleme: 2026-10-06 (EP01 senaryosu)_
 
 - [x] **EP01 konusu seçildi ve senaryo yazıldı:** "Coconut and the Big Box" (konum kelimeleri IN, ON, BEHIND), ~2:40, `docs/scripts/ep01-coconut-and-the-big-box.md`. Gerekçe `docs/RESEARCH.md`. Kullanıcı onayı bekleniyor
 
+- [x] **"Real Coconut!" kapanışı kabul edildi** (sadece evde çekilebilen davranışlar, kullanıcı çeker). Taslak kod `git stash` içinde, commit edilmedi; uygulama için kullanıcının açık "yap" onayı bekleniyor
+
 ## Açık işler (öncelik sırasıyla)
 0. [~] **EP00 10 sn sürümü üretildi (`episodes/ep00-meet-coconut-10s.json`), kullanıcı geri bildirimi bekleniyor.** (Eski not:) Mevcut `episodes/ep00-meet-coconut.json` eski motorun az hareketli zaman çizelgesi. Yeni motorun hareketleriyle yeniden yazılacak ve kullanıcı "yeni video yap" deyince üretilecek. Eski EP00 videosu kullanıcı tarafından "çok basit, hareket yok" diye reddedildi
 1. [~] **EP00 10 sn sesli video üretildi ve gönderildi (2026-10-06)**: anlatıcı af_heart, sessiz Coconut, sembol balonlar, ses 48 kHz/128 kb/s. Kullanıcı geri bildirimi bekleniyor

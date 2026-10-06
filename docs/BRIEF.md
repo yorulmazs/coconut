@@ -32,6 +32,11 @@ Kabul ölçütleri (her bölümde):
 8. **Bölüme göre farklı atmosfer:** mekân, saat, hava değişsin (güneşli öğleden sonra, gece, yağmurlu gün).
 9. **Sınırlar:** yanıp sönen ışık yok, hızlı kesme yok, sakin tempo.
 
+## "Real Coconut!" kapanışı (kullanıcı kararı, 2026-10-06)
+Kullanıcı: "Ben çekerim ama veteriner falan olursa olmaz, sadece evde olursa olur."
+- Gerçek kesit sadece evde çekilebilen davranışlar için. Ev dışı bölümde (veteriner vb.) kesit yok.
+- Çekim kuralları: insan yüzü/sesi yok, adres, kargo etiketi, belge, sokak gören pencere kadrajda yok.
+
 ## Dürüst sınır (kullanıcıya söylendi)
 Kod tabanlı sistemle çıkan en iyi sonuç "iyi hazırlanmış kesme-kâğıt animasyonu"dur, profesyonel çizgi film kalitesi değildir. Daha fazlası için illüstratör çizimi + gerçek animasyon aracı (Synfig/OpenToonz/Moho) gerekir.
 
