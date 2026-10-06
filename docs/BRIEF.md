@@ -7,7 +7,8 @@ Her üretimden önce bunu oku. Kullanıcı bir şeyi bir kez söylediyse tekrar 
 - Üretimden önce `confirm-brief` becerisini uygula: isteneni geri yaz, kabul ölçütlerini çıkar, onay al.
 
 - **Politika/lisans:** Kullanıcıya "kontrol edin" deme. Kendin birincil kaynaktan doğrula ve en güvenli kararı uygula (bkz. `docs/POLICY_NOTES.md`). Bu bundan sonra HER ZAMAN geçerli (kullanıcının açık talimatı, 2026-10-06).
-- **Ses:** Kullanıcı İngilizceyi kendi sesiyle yapamıyor (aksan). Yapay zekâ sesi kullanılacak (Kokoro denemeleri: af_heart, af_bella, af_sky, bf_emma). Seçim kullanıcıdan bekleniyor.
+- **Soru-cevap tarzı (kullanıcı birkaç kez uyardı):** Soru sorulunca tam araştır, emin ol, SONRA kesin cevap ver. Cevabı "doğrulamadım/okumadım/karar sizde" ile açık bırakma. Açık nokta kalırsa kapatmak için araştırmaya devam et. Öneri araştırmaya dayansın.
+- **Ses:** Kullanıcı İngilizceyi kendi sesiyle yapamıyor (aksan). Yapay zekâ sesi kullanılacak (Kokoro denemeleri: af_heart, af_bella, af_sky, bf_emma). Kanal sesi **af_heart** olarak seçildi (Kokoro kalite notu A, Amerikan). Kullanıcı farklı isterse değiştirilir.
 
 ## Kalite çıtası (EP00 geri bildirimi, 2026-10-06)
 Kullanıcı ilk EP00 taslağı için dedi ki: **"çok basit olmuş, hiç hareket yok, ben gerçek animasyon istiyorum."** ve **"Coconut'ın tasması yamuk duruyor."**

@@ -24,6 +24,8 @@ _Son güncelleme: 2026-10-06 (motor v2, onay kapısı)_
 
 - [x] Kokoro ses kullanım hakkı doğrulandı (model kartı: Apache-2.0 ağırlık ve ses paketleri, ticari kullanım hazır), `docs/POLICY_NOTES.md` madde 4
 
+- [x] Kanal sesi seçildi: Kokoro af_heart (kalite notu A, Amerikan), hız 0.9
+
 ## Açık işler (öncelik sırasıyla)
 0. [~] **EP00 10 sn sürümü üretildi (`episodes/ep00-meet-coconut-10s.json`), kullanıcı geri bildirimi bekleniyor.** (Eski not:) Mevcut `episodes/ep00-meet-coconut.json` eski motorun az hareketli zaman çizelgesi. Yeni motorun hareketleriyle yeniden yazılacak ve kullanıcı "yeni video yap" deyince üretilecek. Eski EP00 videosu kullanıcı tarafından "çok basit, hareket yok" diye reddedildi
 1. [ ] **EP00 sesi:** Anlatıcı sesini WAV kaydet, Rhubarb ile ağız verisi üret, `audio` + `mouthCues` ekle, yeniden render et. Not: Videoda ağız şekilleri henüz sesle senkron değil, ses yok
@@ -41,7 +43,7 @@ Zayıf noktalardan hangisi önce: pati/ifadeler, yürüme döngüsü + yan gör�
 ## Bekleyen / kullanıcıdan gerekenler
 - Kanal adı seçimi (adaylar: Coconut the Cat, Coconut & Friends, Little Coconut, Coconut's Cozy Day)
 - Çizim yolu: şimdilik kod tabanlı Coconut; ileride illüstratör düşünülebilir (aynı karakter kılavuzuyla)
-- Seslendirme: kendi sesi mi, yapay ses mi (öneri: kendi sesi)
+- Seslendirme: yapay ses (kullanıcı aksan nedeniyle kendi sesini kullanamıyor). Kanal sesi af_heart, kullanıcı dinleyip değiştirmek isterse değişir
 - `fitcite` deposundaki [PR #2](https://github.com/yorulmazs/fitcite/pull/2) Coconut'ı içermiyor, kullanıcı kapatabilir
 
 ## Büyüme planı

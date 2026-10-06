@@ -54,3 +54,14 @@ _Doğrulama: 2026-10-06. Claude sesi dinleyemez (ses girdisi yok), klonlama ve s
 **Kararlar:**
 - Klonlanmış kendi ses de **sentetiktir**: madde 1 geçerli, "altered or synthetic content" = Evet.
 - Aksan: Amerikan aksanı garanti edilemez. Referans klip Türk aksanlı İngilizce veya Türkçe ise çıktı aksanı taşıyabilir (Chatterbox README). Bu yüzden klonlama yolu **önce test edilecek** (kullanıcı örnek kaydı + A/B dinleme), Kokoro (klonlama yok, Amerikan sesler hazır) yedek yol.
+
+## 7. Kokoro: eğitim verisindeki kapalı sağlayıcılar sorusu (kapatıldı, 2026-10-06)
+- **Bulgu:** Model kartı sağlayıcıları **adıyla belirtmiyor** ("büyük sağlayıcıların kapalı TTS modelleri"). Bu bilgi herkese açık belgelerde yok, bu yüzden hangi şirketlerin koşullarının geçerli olduğunu bilmek mümkün değil.
+- **Hukuki mantık (araştırıldı):** Sağlayıcı koşulları (ör. OpenAI'ın "Output ile rakip model geliştirme" yasağı) sağlayıcı ile **hizmeti kullanan taraf** arasındaki sözleşmedir (Kokoro yazarı). Son kullanıcı olarak biz o sözleşmenin tarafı değiliz, Apache-2.0 lisanslı ağırlıkları kullanıyoruz. OpenAI örneğinde çıktının sahipliği zaten kullanıcıya devrediliyor. Kokoro'nun Apache 2.0 lisansı ve model kartının "ticari kullanıma hazır" beyanı geçerli.
+- **Artık risk:** Bir sağlayıcının Kokoro yazarına karşı iddiası olursa bu bizim kullanımımızı doğrudan kısıtlamaz. Bunu sıfır risk diye yazmıyorum, ama kullanıcının kontrolünde değil ve makul düzeyde düşük.
+- **KARAR:** Kokoro'yu kullan.
+
+## 8. Kanal sesi seçimi (kalite notlarına dayalı)
+- Kokoro'nun resmî ses kalite notları (model kartı VOICES, arama aracı özeti): **af_heart: Overall Grade A** (hedef kalite A), **af_bella: A-**, **af_sky: C-** (eğitim süresi dakikalar seviyesinde). bf_emma lider seslerden biri olarak geçiyor ama kesin notunu doğrulayamadım.
+- Amerikan aksanı istendi, bu yüzden **KARAR: Kanal sesi = Kokoro `af_heart` (Amerikan, kadın), hız 0.9.** Kullanıcı dinleyip farklı tercih ederse değiştirilir (ikinci sıra: `af_bella`).
+- OpenAI TTS veya benzeri bir servis ileride seçilirse, onların kendi TTS kuralı (sesin yapay olduğunu izleyiciye açıkça belirtme) geçerli, bizim "synthetic content = Evet" kararımız bunu da karşılar.

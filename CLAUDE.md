@@ -39,6 +39,10 @@ Inauthentic content politikası: şablon/tekrar eden içerik gelir elde edemeyeb
 4. Kullanıcı "yeni video yap" deyince üret, oyun kitabı kontrol listesini uygula, sağlanmayanı dürüstçe söyle.
 5. Yeni geri bildirim ve karar `docs/BRIEF.md`, `docs/STATUS.md`, bu dosyaya yazılır ve push edilir.
 
+## Soru-cevap kuralı (kullanıcının açık talimatı, defalarca)
+Kullanıcı bir soru sorduğunda: **önce tam araştır, emin ol, sonra kesin cevap ver.** "Okumadım", "doğrulayamadım", "kontrol edin", "karar sizde" ile açık bırakma. Açık kalan bir nokta varsa onu kapatmak için ek araştırma yap. Gerçekten doğrulanamıyorsa neyi denediğini, neden olamadığını ve **verdiğin en güvenli kararı** söyle. Kullanıcıya sadece gerçekten kişisel tercih olan şeyi sor ve her zaman kendi önerini araştırmaya dayandırarak ver.
+**Kanal sesi:** Kokoro `af_heart`, hız 0.9 (bkz. `docs/POLICY_NOTES.md` madde 8).
+
 ## Politika ve lisans kuralı (kullanıcının açık talimatı)
 Kullanıcıya "politikayı/lisansı kontrol edin" **deme**. Kendin birincil kaynaktan doğrula (YouTube Help, projenin LICENSE/README dosyaları, hizmetin kullanım koşulları), ne doğrulayabildiğini ve ne doğrulayamadığını söyle, en güvenli kararı ver ve uygula. Doğrulanmış notlar: `docs/POLICY_NOTES.md`. Ağ engeli varsa (ör. `support.google.com`, `huggingface.co`) atlatmaya çalışma, alternatif birincil kaynak dene, ve yalnızca engelin kendisini bir kez bildir.
 Özet kararlar: yapay zekâ sesi kullanılan her videoda "altered or synthetic content" = Evet (`contains_synthetic_media: true`), kanal ve videolar "made for kids" = Evet, tekrarlayan şablon hikâyeden kaçın ("çekingen ziyaretçi" arkı en fazla her 4 bölümden 1), müzik ve hikâye çeşitli olsun.
