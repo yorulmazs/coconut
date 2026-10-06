@@ -59,3 +59,7 @@ Short real video of Coconut's serious stare, her flower collar, and (if safe) he
 - [x] Green-yellow eyes, serious look as default
 - [x] No scratching, hissing or hitting
 - [x] No address, plate or personal documents
+
+
+---
+**GÜNCELLEME 2026-10-06:** Format kararı: Coconut konuşmaz. Bu senaryodaki Coconut replikleri ("Hmph.", "Hello... a little." vb.) gerçek kedi sesleri ve düşünce sembolleriyle ("!", "?", "...") değiştirilir. Anlatıcı metni aynı kalır. 10 sn sürüm: `episodes/ep00-meet-coconut-10s.json`.

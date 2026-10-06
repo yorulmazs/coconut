@@ -6,7 +6,6 @@
   "foreground": "tunnelLow",
   "blinks": [2.2, 4.2, 9.1],
   "audio": "../out/voice/ep00-meet-coconut-10s/mix.wav",
-  "mouthCues": "ep00-meet-coconut-10s.mouth.json",
   "keys": {
     "offsetY": [[0, 380],[0.35, 380],[0.75, -45],[1.0, 8],[1.25, 0],[5.4, 0],[5.6, -40],[5.9, 0],[6.3, 0],[6.9, 185],[7.7, 185],[8.6, 0]],
     "squashY": [[0, 1],[0.35, 1],[0.55, 1.12],[0.75, 1.15],[1.0, 0.85],[1.25, 1],[5.4, 1],[5.5, 0.88],[5.6, 1.12],[5.9, 0.9],[6.1, 1]],
@@ -34,9 +33,9 @@
     "camY": [[0, 0],[8.2, 0],[9.8, 25]]
   },
   "bubbles": [
-    {"text": "Hello.", "start": 3.6, "end": 5.0},
-    {"text": "Hmm... who is it?", "start": 6.6, "end": 7.9},
-    {"text": "Hello... a little.", "start": 8.4, "end": 9.9}
+    { "text": "!", "start": 5.5, "end": 6.4 },
+    { "text": "?", "start": 6.7, "end": 7.9 },
+    { "text": "...", "start": 8.6, "end": 9.6 }
   ],
   "captions": [
     {"text": "Meet Coconut!", "start": 0.5, "end": 3.3},

@@ -69,10 +69,13 @@ function heartsSVG(t, intensity, cx = 480, cy = 175) {
 }
 
 function bubbleSVG(text, opacity) {
+  // bubble width follows the text so short symbols ("!", "?") get a small bubble
+  const w = Math.min(320, Math.max(90, 22 * text.length + 60));
+  const x = 750 - w / 2;
   return `<g opacity="${opacity}">
-    <rect x="590" y="90" width="320" height="74" rx="22" fill="#fff" stroke="#d6c7a2" stroke-width="4"/>
-    <polygon points="650,164 640,196 684,164" fill="#fff" stroke="#d6c7a2" stroke-width="4" stroke-linejoin="round"/>
-    <rect x="644" y="161" width="42" height="6" fill="#fff"/>
+    <rect x="${x}" y="90" width="${w}" height="74" rx="22" fill="#fff" stroke="#d6c7a2" stroke-width="4"/>
+    <polygon points="${x + 40},164 ${x + 30},196 ${x + 74},164" fill="#fff" stroke="#d6c7a2" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="${x + 34}" y="161" width="42" height="6" fill="#fff"/>
     <text x="750" y="138" text-anchor="middle" font-size="28" font-weight="700" fill="#4d4a42" font-family="Arial, Helvetica, sans-serif">${text}</text>
   </g>`;
 }

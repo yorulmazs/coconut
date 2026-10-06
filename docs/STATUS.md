@@ -28,6 +28,8 @@ _Son güncelleme: 2026-10-06 (motor v2, onay kapısı)_
 
 - [x] **EP00 10 sn için ses hazır:** `tools/make_voice.py` (Kokoro af_heart + Rhubarb), `episodes/ep00-meet-coconut-10s.voice.json`, ağız verisi `episodes/ep00-meet-coconut-10s.mouth.json`, bölüm dosyasına `audio`/`mouthCues` bağlandı. Video henüz üretilmedi (kullanıcı onayı bekleniyor). Kullanıcı sesi henüz dinlemedi
 
+- [x] Format kararı: sessiz Coconut + anlatıcı + öğretici bölümler (`docs/RESEARCH.md`). EP00 10 sn sesi sadece anlatıcıyla yeniden üretildi, balonlar sembol oldu
+
 ## Açık işler (öncelik sırasıyla)
 0. [~] **EP00 10 sn sürümü üretildi (`episodes/ep00-meet-coconut-10s.json`), kullanıcı geri bildirimi bekleniyor.** (Eski not:) Mevcut `episodes/ep00-meet-coconut.json` eski motorun az hareketli zaman çizelgesi. Yeni motorun hareketleriyle yeniden yazılacak ve kullanıcı "yeni video yap" deyince üretilecek. Eski EP00 videosu kullanıcı tarafından "çok basit, hareket yok" diye reddedildi
 1. [ ] **EP00 sesini kullanıcı dinleyip onaylayacak**; sonra "yeni video yap" ile ses ve ağız senkronlu 10 sn video üretilir

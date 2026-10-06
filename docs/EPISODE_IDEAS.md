@@ -2,6 +2,9 @@
 
 Format: 2-3 dk, giriş şarkısı + küçük sorun + denemeler + çözüm + kısa kapanış. Sakin tempo, tekrarlı cümleler. Her fikir gerçek Coconut'ın huyundan gelir.
 
+## Format: öğretici hikâye + sessiz Coconut
+Her bölümde net bir kazanım (duygular, renkler, sayılar, nezaket, rutin) ve basit bir olay örgüsü. Anlatıcı tekrar eden kalıpları ve soruları ("Can you see the red ball?") kullanır, kısa duraklamalarla izleyiciyi katar. Coconut sadece hareket ve gerçek kedi sesleriyle oynar.
+
 ## Çeşitlilik kuralı (YouTube "inauthentic content" riski, bkz. `docs/POLICY_NOTES.md`)
 "Coconut çekiniyor, sonra ısınıyor" arkı en fazla her 4 bölümden 1'inde kullanılır. Bölümler farklı durum, mekân, problem ve sonuçlara sahip olmalı. Her bölümde yeni bir olay ve farklı bir sonuç.
 

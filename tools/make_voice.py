@@ -158,7 +158,10 @@ def main():
     if t < spec["duration"]:
         filled.append({"start": round(t, 3), "end": spec["duration"], "value": "X"})
     mouth_path = spec_path.parent / f"{name}.mouth.json"
-    mouth_path.write_text(json.dumps({"metadata": {"generatedBy": "tools/make_voice.py"}, "mouthCues": filled}, indent=1))
+    if mouth_cues:
+        mouth_path.write_text(json.dumps({"metadata": {"generatedBy": "tools/make_voice.py"}, "mouthCues": filled}, indent=1))
+    else:
+        mouth_path = "(none: no on-screen speaker in this episode)"
 
     report["mix_peak_db"] = round(20 * math.log10(max(mix_peak, 1e-9)), 1)
     report["mouth_shapes"] = {s: sum(1 for c in mouth_cues if c["value"] == s) for s in sorted({c["value"] for c in mouth_cues})}

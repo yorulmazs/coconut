@@ -5,6 +5,9 @@ Bu dosyayı her oturumun başında oku. Proje geçmişi, kararlar ve kurallar bu
 ## Proje özeti
 Sahibi, kedisi **Coconut**'tan esinlenen bir **çocuk animasyonu YouTube kanalı** (2-5 yaş, İngilizce, 2-3 dk bölümler) ve gerçek Coconut için bir **Instagram hesabı** kuruyor. İkisi birbirini besleyecek (biyografide karşılıklı link). Kullanıcı Türkçe konuşur, bilgisayarı **Mac**. Videolar ve kanal içeriği **sadece İngilizce**. Kullanıcıyla Türkçe konuş.
 
+## Format kararı: sessiz Coconut + anlatıcı (2026-10-06, araştırmaya dayalı)
+**Coconut konuşmaz.** Hikâyeyi **anlatıcı** (Kokoro af_heart) anlatır, Coconut **hareket, ifade ve gerçek kedi sesleriyle** oynar (miyav, mırıltı, "Hmph"; ileride kullanıcının kaydettiği gerçek Coconut sesleri). Konuşma balonu yerine düşünce sembolleri ("!", "?", "...", kalpler). Her bölümün **öğretici bir kazanımı** olsun (duygular, renkler, sayılar, nezaket, rutinler). Gerekçe `docs/RESEARCH.md` "Konuşan mı, sessiz mi" bölümünde.
+
 ## Ana kararlar (tekrar tartışma, değiştirmek için kullanıcıya sor)
 1. **Tutarlılık kuralı:** Coconut sadece `character/coconut.js` + `character/palette.json` ile çizilir. Hiçbir sahnede "yeniden çizilmez". Yapay zekâ video platformları ana karakter için kullanılmaz (tutarlılık riski, çocuk içeriği politikası riski).
 2. **Üretim hattı:** Bölüm = `episodes/*.json` zaman çizelgesi, `render.js` ile MP4. Ağız senkronu Rhubarb Lip Sync (A-H, X) ile.

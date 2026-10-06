@@ -55,3 +55,14 @@ Piper TTS, CharForge (tek görselden karakter LoRA), BetterFountain.
 | YouTube anahtar kelime/etiket araçları | Açık kaynak depo bulunamadı, çoğu ücretli/Apify servisi | Gerekirse elle YouTube arama önerilerine bak |
 | Altyazı (SRT) yükleme | Hazır güvenilir depo bulunamadı. `google-api-python-client` ile yapılabilir, `youtube-skill` ile birlikte düşünülür | Kendi betiğimiz, ihtiyaç olunca |
 | Shorts için 9:16 kesit çıkarma (AutoShorts vb.) | Canlı çekim videolar için (yüz takibi, Whisper). Depo adresini doğrulayamadım | **Gereksiz.** Kendi render'ımız animasyonu doğrudan 9:16 üretebilir (render ayarı eklenecek) |
+
+## Konuşan Coconut mu, sessiz Coconut + anlatıcı mı? (2026-10-06)
+**Kaynak kalitesi:** Bulgular genel çocuk gelişimi araştırmaları ve yayın sektörü yazılarından; ne konuşan karakter ne de sessiz karakter formatını doğrudan karşılaştıran güçlü bir çalışma buldum. Karar araştırma + bizim kısıtlarımızın birleşiminden.
+- Görsel olarak anlatılan (animasyonlu) hikâyeler küçük çocuklar için işlemesi daha kolay, anlatı kurma, kelime çeşitliliği ve fiil kullanımı kitaba göre daha yüksek bulunmuş ([PMC çalışması](https://pmc.ncbi.nlm.nih.gov/articles/PMC9292601/)). Çoklu ortam hikâyeler özellikle ikinci dil öğrenen çocuklarda kelime öğrenmeyi destekliyor.
+- Çocuk-etkileşimli okuma (soru-cevap, katılım) ekranda pasif izlemeden daha iyi sonuç veriyor ([PMC EEG çalışması](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6874384/)). **Çıkarım:** anlatıcı izleyiciye soru sorsun, duraklasın.
+- Sessiz hayvan karakterler (Pingu, Shaun the Sheep) küresel erişim ve kolay dublaj sağlıyor, duygu yüz ifadesi, beden dili ve karakter sesleriyle aktarılıyor ([kaynak](https://kidscreen.com/?p=6040)). Ama bu formatta animasyon kalitesi (göz, mimik, hareket) daha da kritik.
+- Küçük çocuk kanallarında net öğretici hedef, tekrar ve sade görsel kazanımı artırıyor, gürültü ve hızlı kesme zarar veriyor (genel rehberler, düşük güvenilirlik).
+
+**Bizim kısıtlarımız:** (1) Gerçek Coconut konuşmuyor, Instagram bağlantısı için doğal. (2) Coconut'a yapay zekâ ses vermek (tizleştirilmiş Kokoro) yapay duruyor ve ağız senkronu zayıf noktamız. (3) Sadece anlatıcı sesi olunca dil değiştirmek (ör. Türkçe kanal) çok kolay, animasyon aynen kalır. (4) Ses sentezi bir anlatıcıyla sınırlı kalınca YouTube "sentetik içerik" yükümlülüğümüz de daralıyor. (5) Motorumuzun güçlü yanı hareket ve ifade.
+
+**KARAR:** Coconut konuşmaz, anlatıcı anlatır, bölümler öğretici. Gerçek Coconut'ın miyav/mırıltı kayıtları efekt olarak kullanılacak (kullanıcı kaydedebilir, kayıtta insan sesi ve kişisel bilgi olmasın).

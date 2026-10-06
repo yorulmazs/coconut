@@ -1,14 +1,12 @@
 {
   "duration": 10,
+  "rms_target_db": -17,
   "voices": {
-    "narrator": { "voice": "af_heart", "speed": 0.9, "pitch": 0 },
-    "coconut":  { "voice": "af_heart", "speed": 0.9, "pitch": 5 }
+    "narrator": { "voice": "af_heart", "speed": 0.9, "pitch": 0 }
   },
   "lines": [
     { "id": "n1", "speaker": "narrator", "start": 0.6, "text": "Hello, friends! This is Coconut." },
-    { "id": "c1", "speaker": "coconut",  "start": 3.7, "text": "Hello." },
-    { "id": "n2", "speaker": "narrator", "start": 4.7, "text": "But Coconut is a little shy." },
-    { "id": "c2", "speaker": "coconut",  "start": 6.7, "text": "Hmm... who is it?" },
-    { "id": "c3", "speaker": "coconut",  "start": 8.5, "text": "Hello... a little." }
+    { "id": "n2", "speaker": "narrator", "start": 4.0, "text": "But Coconut is a little shy." },
+    { "id": "n3", "speaker": "narrator", "start": 7.6, "text": "She says hello... a little." }
   ]
 }
