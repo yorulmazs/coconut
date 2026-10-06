@@ -21,9 +21,13 @@ Mavi-gri kısa tüylü, tombul; yeşil-sarı gözler, ciddi/çatık bakış; gö
 ## Animasyon kalitesi
 Her sahneden önce `docs/ANIMATION_PLAYBOOK.md` oku (12 prensip, bizim motor parametrelerine uyarlanmış, bilinen zayıf noktalar, kontrol listesi). Video göndermeden önce oradaki kontrol listesini uygula.
 
+## YouTube gerçekleri (ayrıntı `docs/RESEARCH.md`)
+Inauthentic content politikası: şablon/tekrar eden içerik gelir elde edemeyebilir, her bölüm özgün olmalı. Made for Kids: kişiselleştirilmiş reklam ve yorumlar kapalı, CPM düşük, gelir beklentisi düşük tutulur.
+
 ## Kaynak repolar (ayrıntı ve gerekçeler: `docs/RESEARCH.md`)
 **Kullanılan / kullanılacak:** [Rhubarb Lip Sync](https://github.com/DanielSWolf/rhubarb-lip-sync) (ağız senkronu), [youtube-skill](https://github.com/junjunjunbong/youtube-skill) (yükleme, güvenli bulundu, henüz çalıştırılmadı).
 **Animasyon kalitesi için fikir kaynağı** (içerik kopyalanmaz, fikirler `docs/ANIMATION_PLAYBOOK.md`'de): [vibe-motion/skills](https://github.com/vibe-motion/skills) `disney-animation-rule-skill` (lisans belirsiz), [dylantarre/animation-principles](https://github.com/dylantarre/animation-principles) (MIT), [lottiefiles/motion-design-skill](https://github.com/lottiefiles/motion-design-skill) (MIT).
+**Kanal açıldıktan sonra:** [analytix](https://github.com/parafoxia/analytix) (YouTube Analytics API SDK, BSD-3).
 **Olası, henüz denenmedi:** [Kokoro TTS](https://github.com/hexgrad/kokoro) (taslak ses), [ai-video-captions](https://github.com/nicolaigaina/ai-video-captions) (Reels altyazısı), [Beat](https://github.com/lmparppei/Beat) (Mac senaryo editörü), [thorwhalen/an](https://github.com/thorwhalen/an) (fikir kaynağı).
 **KULLANMA:** `GenielabsOpenSource/spine-animation-ai` (PolyForm Noncommercial: gelirli YouTube kanalında kullanılamaz), AgentTube, LLM Council, ECC, tam otomatik yapay zekâ video platformları (ana karakter için).
 **Lisans kuralı:** Başka bir repodan kod/metin kopyalamadan önce lisansını kontrol et. Ticari kullanıma izin vermeyen (Noncommercial) veya lisanssız içeriği kullanma, sadece fikir al ve kendi cümlelerinle yaz.

@@ -32,3 +32,26 @@ Piper TTS, CharForge (tek görselden karakter LoRA), BetterFountain.
 | [lottiefiles/motion-design-skill](https://github.com/lottiefiles/motion-design-skill) | **Fikir kaynağı** (MIT) | Zamanlama/yumuşatma tabloları, kalite kontrol listesi, sorun giderme. Arayüz odaklı |
 | [GenielabsOpenSource/spine-animation-ai](https://github.com/GenielabsOpenSource/spine-animation-ai) | **KULLANMA** | PolyForm Noncommercial lisansı: ticari kullanıma izin vermez, YouTube'dan gelir elde edilecek bir kanalda kullanılamaz |
 | Çocuk içeriği tempo rehberi | Depo bulunamadı | Sadece genel web önerileri var, kaynak güvenilirliği düşük |
+
+## YouTube'da animasyon yapanlar nasıl çalışıyor (2026-10-06)
+**Güvenilirlik uyarısı:** Sonuçlar ağırlıklı olarak serbest çalışma ilanları ve SEO blogları. Çocuk kanalı yapan kişilerin kendi anlattığı güvenilir bir kaynak bulunamadı. Genel tablo olarak oku.
+
+**İş akışı:** Ön hazırlık (senaryo, kaba storyboard) → üretim (karakter ve arka plan, animasyon, ağız senkronu) → son işlem (montaj, ses, müzik, çıktı). Büyük kanallar rolleri ayırır; küçükler karakteri bir kez çizip yeniden kullanılabilir rig yapar. [Kaynak](https://cloud.motorsport.unibo.it/article/how-to-create-a-cartoon-video-from-concept-to-screen)
+
+**Araçlar** ([karşılaştırma](https://www.bloopanimation.com/character-animator-vs-toon-boom/)): Adobe Character Animator (canlı performans yakalama, konuşma ağırlıklı işlere uygun, aksiyonda zayıf), Moho (yeniden kullanılabilir 2D rig, tek seferlik ~$400), Toon Boom Harmony (sektör standardı, $25-117/ay), Cartoon Animator, Blender Grease Pencil, After Effects, Adobe Animate. Fiyatlar kaynağa göre, doğrulanmadı.
+
+**Maliyet** ([kaynak](https://zelios.agency/pricing-guide-cost-of-2d-animation-per-minute-worldwide/)): 2D animasyon dakika başı serbest çalışan ~$50-300, küçük stüdyo ~$300-30.000, ABD $3.000-10.000, Hindistan/Filipinler $500-3.000. Bölüm başına süre için güvenilir rakam bulunamadı.
+
+**YouTube kuralları:**
+- *Inauthentic content* politikası ([Temmuz 2025](https://alternativeto.net/news/2025/7/youtube-updates-its-policy-to-demonetize-inauthentic-mass-produced-ai-generated-content)): şablon/tekrar eden, neredeyse aynı, özgünlüğü az videolar gelir elde edemeyebilir. Yapay zekâ kullanmak yasak değil. **Sonuç: her bölüm farklı hikâye, gerçek ses, gerçek Coconut bağlantısı olsun, şablon bölüm tekrarlama.**
+- *Made for Kids* ([kaynak](https://www.vidiq.com/blog/post/make-money-kids-youtube-channel)): kişiselleştirilmiş reklam, yorumlar ve bazı özellikler kapalı, CPM düşük (kaynaklara göre genel animasyon ~$1-3, eğitici ~$4-7). Reklam geliri tek başına yetmeyebilir. YouTube Kids'te görünme avantajı. **Gelir beklentisi düşük tutulacak, Instagram ve ürünler çeşitlendirme için düşünülecek (varsayım).**
+
+## YouTube ile ilgili repo taraması (2026-10-06)
+| Repo / araç | Ne yapıyor | Karar |
+|---|---|---|
+| [parafoxia/analytix](https://github.com/parafoxia/analytix) | YouTube Analytics API için Python SDK, rapor dışa aktarma (CSV, pandas), OAuth. BSD-3, son commit Mart 2026. Klonlandı ve README/lisans incelendi, çalıştırılmadı | **Kanal açılınca kullan** (izlenme, tutulma raporları). `pip install analytix`. Hangi metriklerin (ör. gösterim tıklama oranı) API'den geldiğini doğrulamadım |
+| [Thomas-George-T/Streamlit-YouTube-Dashboard](https://github.com/Thomas-George-T/Streamlit-YouTube-Dashboard) | Tek video için yorum/beğeni özeti | **Gereksiz.** Made for Kids videolarında yorum kapalı |
+| YouTube thumbnail/başlık A/B testi | Açık kaynak depo **bulunamadı**. Ticari araçlar var (ThumbnailTest, VidAnalyze), YouTube'un kendi "Test & Compare" özelliği de var | Kanal büyüyünce YouTube'un kendi özelliğine bak |
+| YouTube anahtar kelime/etiket araçları | Açık kaynak depo bulunamadı, çoğu ücretli/Apify servisi | Gerekirse elle YouTube arama önerilerine bak |
+| Altyazı (SRT) yükleme | Hazır güvenilir depo bulunamadı. `google-api-python-client` ile yapılabilir, `youtube-skill` ile birlikte düşünülür | Kendi betiğimiz, ihtiyaç olunca |
+| Shorts için 9:16 kesit çıkarma (AutoShorts vb.) | Canlı çekim videolar için (yüz takibi, Whisper). Depo adresini doğrulayamadım | **Gereksiz.** Kendi render'ımız animasyonu doğrudan 9:16 üretebilir (render ayarı eklenecek) |

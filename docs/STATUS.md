@@ -15,6 +15,8 @@ _Son güncelleme: 2026-10-06 (motor v2, onay kapısı)_
 
 - [x] Animasyon kalitesi araştırması: `docs/ANIMATION_PLAYBOOK.md` (12 prensip, zayıf noktalar, kontrol listesi) ve `docs/RESEARCH.md` güncellendi
 
+- [x] YouTube animasyon üretimi ve repo taraması `docs/RESEARCH.md`'ye kaydedildi
+
 ## Açık işler (öncelik sırasıyla)
 0. [~] **EP00 10 sn sürümü üretildi (`episodes/ep00-meet-coconut-10s.json`), kullanıcı geri bildirimi bekleniyor.** (Eski not:) Mevcut `episodes/ep00-meet-coconut.json` eski motorun az hareketli zaman çizelgesi. Yeni motorun hareketleriyle yeniden yazılacak ve kullanıcı "yeni video yap" deyince üretilecek. Eski EP00 videosu kullanıcı tarafından "çok basit, hareket yok" diye reddedildi
 1. [ ] **EP00 sesi:** Anlatıcı sesini WAV kaydet, Rhubarb ile ağız verisi üret, `audio` + `mouthCues` ekle, yeniden render et. Not: Videoda ağız şekilleri henüz sesle senkron değil, ses yok
@@ -23,7 +25,8 @@ _Son güncelleme: 2026-10-06 (motor v2, onay kapısı)_
 4. [ ] Varlık setini genişlet: yandan görünüş, yürüme, 5 ifade, ikinci mekân (yatak odası), Mom & Dad karakterleri
 5. [ ] Kanal kimliği paketi: kanal adı, logo, biyografi (EN), Instagram biyografisi
 6. [ ] Google Cloud OAuth + `youtube-skill` ile **private** deneme yüklemesi
-7. [ ] İlk 3 bölümü birlikte yayına al, haftada 1 bölüm + haftada 3-4 Instagram paylaşımı
+7. [ ] Render'a dikey (9:16) Shorts çıktısı seçeneği ekle
+8. [ ] İlk 3 bölümü birlikte yayına al, haftada 1 bölüm + haftada 3-4 Instagram paylaşımı
 
 ## Bir sonraki adım (kullanıcı seçecek)
 Zayıf noktalardan hangisi önce: pati/ifadeler, yürüme döngüsü + yan görünüş, ses + ağız senkronu. Seçime göre oyun kitabına uyarak kodda geliştir, tek karelerle kontrol et, kullanıcı "yeni video yap" deyince üret.
