@@ -183,7 +183,7 @@ async function main() {
   const ffArgs = ['-loglevel', 'error', '-y', '-framerate', String(fps), '-i', path.join(tmp, 'f%05d.png')];
   if (ep.audio) ffArgs.push('-i', path.resolve(epDir, ep.audio));
   ffArgs.push('-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '20');
-  if (ep.audio) ffArgs.push('-c:a', 'aac', '-shortest');
+  if (ep.audio) ffArgs.push('-c:a', 'aac', '-b:a', '128k', '-ar', '48000', '-shortest');
   ffArgs.push(out);
   const r = spawnSync(ff, ffArgs, { stdio: 'inherit' });
   fs.rmSync(tmp, { recursive: true, force: true });
