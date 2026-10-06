@@ -18,6 +18,9 @@ Mavi-gri kısa tüylü, tombul; yeşil-sarı gözler, ciddi/çatık bakış; gö
 ## Üretim kapısı (EN ÖNEMLİ KURAL)
 **Kullanıcı açıkça "yeni video yap" (veya eşdeğeri) demeden hiçbir video üretme ve gönderme.** Her video için ayrı onay gerekir, önceki onay sonrakini kapsamaz. Üretimden önce `.claude/skills/confirm-brief` becerisini uygula: `docs/BRIEF.md` oku, isteneni geri yaz, kabul ölçütlerini çıkar, onay al. Üretince kareleri kendin kontrol et ve sağlanmayan ölçütü dürüstçe söyle. Kullanıcı aynı geri bildirimi ikinci kez vermek zorunda kalmamalı: geri bildirimleri `docs/BRIEF.md` içine yaz.
 
+## Animasyon kalitesi
+Her sahneden önce `docs/ANIMATION_PLAYBOOK.md` oku (12 prensip, bizim motor parametrelerine uyarlanmış, bilinen zayıf noktalar, kontrol listesi). Video göndermeden önce oradaki kontrol listesini uygula.
+
 ## Sert kurallar
 - **Çocuk güvenliği:** Tırmalama, tıslama, vurma sahnede gösterilmez. Çekingenlik = saklanma, sırt çevirme, kuyruk kabartma, "Hmph.", "Not today.". Yabancıya tepki yumuşatılır ve sabırla ısınma hikâyesine çevrilir.
 - **Mahremiyet:** Kullanıcının fotoğraflarında adres, plaka, belge ve imza görünmüştü. Hiçbir çıktıya (video, görsel, metin) gerçek adres, plaka, kişisel belge girmez. Instagram'a konacak gerçek fotoğraflar için bulanıklaştırma/kırpma hatırlat.

@@ -23,3 +23,12 @@
 
 ## Test edilmeyenler (sonra bakılabilir)
 Piper TTS, CharForge (tek görselden karakter LoRA), BetterFountain.
+
+## Animasyon kalitesi için bakılanlar (2026-10-06)
+| Repo | Karar | Not |
+|---|---|---|
+| [vibe-motion/skills](https://github.com/vibe-motion/skills) `disney-animation-rule-skill` | **Fikir kaynağı** | Prosedürel (SVG/Remotion) animasyon için 12 prensip kuralları, faz tablosu, kontrol listesi. Tam bizim yaklaşımımıza uyuyor. Kök dizinde lisans dosyası görmedim, bu yüzden kopyalamadım, fikirleri kendi cümlelerimle `docs/ANIMATION_PLAYBOOK.md`'ye yazdım |
+| [dylantarre/animation-principles](https://github.com/dylantarre/animation-principles) | **Fikir kaynağı** (MIT) | Prensip başına beceriler (squash-stretch, anticipation, follow-through...). Arayüz animasyonu odaklı ama prensip kısımları işe yarar |
+| [lottiefiles/motion-design-skill](https://github.com/lottiefiles/motion-design-skill) | **Fikir kaynağı** (MIT) | Zamanlama/yumuşatma tabloları, kalite kontrol listesi, sorun giderme. Arayüz odaklı |
+| [GenielabsOpenSource/spine-animation-ai](https://github.com/GenielabsOpenSource/spine-animation-ai) | **KULLANMA** | PolyForm Noncommercial lisansı: ticari kullanıma izin vermez, YouTube'dan gelir elde edilecek bir kanalda kullanılamaz |
+| Çocuk içeriği tempo rehberi | Depo bulunamadı | Sadece genel web önerileri var, kaynak güvenilirliği düşük |
