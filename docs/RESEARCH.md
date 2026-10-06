@@ -84,3 +84,23 @@ Piper TTS, CharForge (tek görselden karakter LoRA), BetterFountain.
 - Örnekler: Daniel Tiger's Neighborhood (PBS) animasyon hikâyeden sonra aynı konuyu gerçek çocuklarla canlı çekimde gösteriyor ([Wikipedia](https://en.wikipedia.org/wiki/Daniel_Tiger%27s_Neighborhood)); Dinosaur Train 2009'dan beri her bölüm sonunda paleontolog Dr. Scott'la canlı çekim kesiti veriyor ([Wikipedia](https://en.wikipedia.org/wiki/Dinosaur_Train)).
 - Çocuklar en az 3 yaşından itibaren hikâye dünyası gerçeğe benzedikçe öğrendiğini gerçeğe daha çok aktarıyor ([eScholarship](https://escholarship.org/content/qt8gp313hd/qt8gp313hd.pdf), [BPS Research Digest](https://bps.org.uk/research-digest/fantasy-prone-children-struggle-apply-lessons-fantasy-stories)).
 - **Sonuç:** Sabit kapanış ritüeli olarak, hikâyeye karışmadan ve dersi tekrar ederek yapılırsa konsepti bozmaz, dersi gerçek hayata bağlar. Risk: her bölüm için uygun ev çekimi gerekir. **Kullanıcı kararı:** sadece evde çekilebilen davranışlar.
+
+## Çocukların dikkatini çekip videoda tutacak fikirler (2026-10-06, kullanıcı sorusu)
+**Bulgular:**
+- **Dikkati artıran/azaltan özellikler:** Okul öncesi çocukların TV'ye bakışını artıranlar: kadın ve çocuk sesleri, ses değişimleri, tuhaf/komik sesler, hareket, ses efektleri, gülme ve alkış. Azaltanlar: yetişkin erkek sesi, uzun zoom ve kaydırmalar, uzun göz teması (konuşan kafa) ve durağan çekimler. Yorum: bunlar çocuğa "anlaşılır içerik geliyor" işareti verdiği ölçüde işe yarıyor ([Alwitt, Anderson, Lorch, Levin 1980](https://scholars.uky.edu/es/publications/preschool-childrens-visual-attention-to-attributes-of-television/)).
+- **Tekrar ve katılım:** Blue's Clues aynı bölümü 5 gün üst üste yayınladı. Tekrar izleme anlamayı ve katılımı artırdı ([Crawley, Anderson ve ark.](https://en.wikipedia.org/wiki/Participatory_cues), [Mental Floss](https://www.mentalfloss.com/entertainment/tv/why-blues-clues-repeated-same-episode-five-days)).
+- **Sürpriz:** Bebekler beklentiyi bozan nesneye daha çok odaklanıyor ve onunla ilgili daha çok öğreniyor ([Stahl ve Feigenson 2015, Science, JHU](https://hub.jhu.edu/2015/04/02/surprise-babies-learning)). Çıkarım: dersin geçtiği anda nazik bir sürpriz.
+- **Karaktere bağ:** Çocuklar arkadaş gibi gördükleri, tanıdık bir karakterden daha iyi öğreniyor (Elmo/Dora çalışmaları, [Georgetown, Calvert](https://www.georgetown.edu/news/1-25-million-nsf-grants-explore-media-characters-role-in-early-learning/)). Çıkarım: tutarlı karakter ve her bölümde tekrar eden imza davranışlar.
+- **YouTube kalite ilkeleri (gelir riski):** Çocuk içeriğinde yüksek kalite: öğrenme ve merak, yaratıcılık ve oyun, iyi davranış örneği. Düşük kalite: sansasyonel veya yanıltıcı başlık/kapak, "eğitici gibi görünen ama öğretmeyen" içerik, aşırı ticari içerik. Düşük kaliteli çocuk içeriği önerilerde azaltılıyor, ağırlıklı olarak düşük kaliteli kanallar YPP'den çıkarılabiliyor ([YouTube Blog](https://blog.youtube/inside-youtube/enabling-high-quality-youtube-kids-experience/), [YouTube Blog: responsibility approach](https://blog.youtube/news-and-events/our-responsibility-approach-protecting-kids-and-families-youtube/)). **Çıkarım:** dikkat hilelerle değil içerikle tutulur; tıklama tuzağı başlık ve kapak yok.
+
+**Öneriler (kullanıcı onayı bekliyor, hiçbiri uygulanmadı):**
+1. **Açılış kancası:** İlk 5-10 sn sorun veya sürpriz giriş şarkısından önce gelir (EP01: kutu kayarak gelir, Coconut "!").
+2. **"Küçük fareyi bul" oyunu:** Her bölümde küçük bir oyuncak fare farklı bir yere saklanır. Anlatıcı ortada bir kez sorar, sonda gösterir. Tekrar izleme sebebi olur (Blue's Clues ipucu mantığı).
+3. **Ses tasarımı:** Bol ve yumuşak ses efektleri (boing, pop, hışırtı), çocuk "yay!" ve kahkaha efektleri (lisanslı), kadın anlatıcı (af_heart, zaten öyle). Uzun zoom/kaydırma ve durağan an yok.
+4. **Her bölümde bir nazik sürpriz:** Dersin geçtiği anda beklenmedik ama korkutmayan bir olay (kutu devrilir, Coconut bambaşka yerden çıkar).
+5. **Hareketli katılım:** "Can you stretch like Coconut? Up, up!", "Can you say meow?" Çocuk ayağa kalkar, taklit eder.
+6. **Coconut'a yardım et:** İzleyici Coconut'ın yardımcısı olur ("Can you help Coconut find her ball?"), karaktere bağı güçlendirir.
+7. **İmza davranışlar:** Gururlanınca "Hmph" + kuyruk vuruşu, her bölüm sonunda "seni seviyorum" yavaş göz kırpışı. Göz teması kısa ve hareketle birlikte, uzun bakış yok (Alwitt 1980).
+8. **Sabit kapanış ritüeli:** 15 sn ders tekrarı şarkısı → Real Coconut! → yavaş göz kırpma ve bye-bye.
+9. **Haftalık tekrar:** Bölümden 15-30 sn Shorts ("Where is Coconut?" oyunu) hafta içinde aynı dersi tekrar ettirir.
+10. **Sonraki bölüm ipucu (3 sn):** "Next time: Coconut and the red dot!" (Etkisi için güçlü kaynak bulamadım, düşük güvenilirlik.)
