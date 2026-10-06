@@ -36,6 +36,11 @@ Kaynaklar (kendi cümlelerimle özetlendi, kopyalanmadı): Disney'in 12 prensibi
 - Karakter duygusu büyük ve net okunmalı: büyük gülümseme, yumuşak bakış, basit hareketler
 - Not: Bunlar web aramasından gelen genel öneriler, tek bir güvenilir depo yok. Kanal ilerledikçe kendi izlenme verimizle test edilecek
 
+## Renk ve sahne zenginliği (araştırma, 2026-10-06)
+- 4-7 yaş çocuklar canlı ve parlak renkleri tercih ediyor; kırmızı, yeşil, mavi, mor tonlarında doygunluk arttıkça tercih artıyor, sıcak renkler biraz önde. Göz izleme çalışması: orta-yüksek parlaklık ve kontrast görsel konforu artırıyor, çok düşük kontrast dikkati bozuyor ([Frontiers in Psychology 2023](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10771309/)).
+- Çok süslü ortam dikkati dağıtıyor: aşırı dekore sınıfta anaokulu çocukları zamanın %39'unda konu dışıydı (sade sınıfta %28), öğrenme kazancı %18'e karşı %33 ([Fisher, Godwin, Seltman 2014, Psychological Science, CMU haberi](https://www.cmu.edu/news/stories/archives/2014/may/may27_decoratedclassrooms.html)). **Çıkarım:** renk canlı olsun ama detay, ders ve karakterle ilgisizse az ve karakterin arkasında değil.
+- 9 dakikalık hızlı tempolu, yoğun fantastik çizgi film 4 yaş çocukların yürütücü işlevlerini hemen düşürdü ([Lillard ve Peterson 2011, Pediatrics](https://sciencedaily.com/releases/2011/09/110912075658.htm)). **Çıkarım:** canlılık renk ve ışıktan gelsin, hızlı kesme ve yanıp sönmeden değil.
+
 ## Bilinen zayıf noktalarımız ve planı
 | Zayıf nokta | Plan |
 |---|---|
@@ -43,6 +48,7 @@ Kaynaklar (kendi cümlelerimle özetlendi, kopyalanmadı): Disney'in 12 prensibi
 | Yürüme / yan görünüş yok | Yan görünüş varlık seti + yürüme döngüsü (4 anahtar poz: temas, geçiş, tepe, geçiş) |
 | Ziyaretçi çocuk çok basit | Ayrı bir karakter kılavuzu + ifade seti |
 | Ses yok, ağız hareketi sahte | Gerçek ses + Rhubarb |
+| Sahne soluk (bej/krem, düşük doygunluk), boş duvar, ortam durağan | Sıcak canlı palet, 3 katman + ışık, pencerede bulut/kuş, bölüme göre atmosfer (bkz. `docs/BRIEF.md` ölçüt 4-9) |
 | Çeşitli ifadeler az | 5 ifade seti: ciddi, şaşkın, mutlu (kapalı göz), uykulu, meraklı |
 
 ## Gözden geçirme kontrol listesi (video göndermeden önce)
