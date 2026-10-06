@@ -38,3 +38,18 @@ _Doğrulama tarihi: 2026-10-06. Kural: Politika ve lisans konularında kullanıc
 ## 5. Diğer
 - Yapay zekâ sesi seçildi (kullanıcı kendi İngilizce sesini kullanamıyor, aksan farkı).
 - Ücretli ses servisleri (ElevenLabs vb.) seçilirse **o an** lisans ve koşulları birincil kaynaktan doğrulanacak (henüz doğrulanmadı).
+
+## 6. Ses klonlama (kullanıcının kendi sesinden Amerikan aksanlı İngilizce)
+_Doğrulama: 2026-10-06. Claude sesi dinleyemez (ses girdisi yok), klonlama ve sentez araçlarla yapılır. Bu ortamda denenemedi: Hugging Face ağ engeli (model dosyaları inmiyor) ve kullanıcının ses örneği henüz yok._
+
+| Araç | Lisans (birincil kaynakta doğrulandı) | Ticari | Not |
+|---|---|---|---|
+| [Chatterbox](https://github.com/resemble-ai/chatterbox) | Kod: MIT (LICENSE okundu) | Evet | Kısa referans sesten klonlama. README: referans klibin dili hedef dil etiketiyle uyuşmazsa **çıktı referansın aksanını miras alabilir**, bunu azaltmak için `cfg_weight=0` öneriliyor |
+| [OpenVoice](https://github.com/myshell-ai/OpenVoice) | V1 ve V2: MIT (README: "Free for both commercial and research use") | Evet | Ton rengi klonlama, stil/aksan kontrolü |
+| [F5-TTS](https://github.com/SWivid/F5-TTS) | Kod MIT, **ağırlıklar CC-BY-NC** (README) | **HAYIR** | Gelirli kanalda kullanma |
+| XTTS v2 (Coqui) | Coqui Public Model License, ticari değil (arama kaynaklarına göre, birincil kaynakta doğrulanmadı) | **HAYIR (varsayım, güvenli taraf)** | Kullanma |
+| [ElevenLabs](https://elevenlabs.io/terms-of-use) | Resmî sayfalar (arama özeti): ücretsiz planda ticari kullanım yok, ücretli planlarda var; kendi sesinizi klonlamak serbest, ticari haklar Creator planından itibaren | Ücretli planda evet | Kullanıcı sesini ElevenLabs'a **kalıcı, geri alınamaz, alt lisanslanabilir bir lisansla** (hizmeti sunmak/geliştirmek için) veriyor. Gizlilik açısından bilinçli karar gerekir |
+
+**Kararlar:**
+- Klonlanmış kendi ses de **sentetiktir**: madde 1 geçerli, "altered or synthetic content" = Evet.
+- Aksan: Amerikan aksanı garanti edilemez. Referans klip Türk aksanlı İngilizce veya Türkçe ise çıktı aksanı taşıyabilir (Chatterbox README). Bu yüzden klonlama yolu **önce test edilecek** (kullanıcı örnek kaydı + A/B dinleme), Kokoro (klonlama yok, Amerikan sesler hazır) yedek yol.
