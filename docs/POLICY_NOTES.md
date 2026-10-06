@@ -32,8 +32,9 @@ _Doğrulama tarihi: 2026-10-06. Kural: Politika ve lisans konularında kullanıc
 ## 4. Kokoro TTS lisansı (yapay zekâ sesi)
 - Kaynaklar (projenin kendi dosyaları, doğrulandı): [hexgrad/kokoro LICENSE ve README](https://github.com/hexgrad/kokoro) ("Apache-licensed weights", Apache 2.0), [thewh1teagle/kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx) (kod: MIT, "kokoro model: Apache 2.0").
 - **Sonuç:** Apache 2.0 ticari kullanıma izin verir. Çıkan ses dosyalarının kullanımı için ek bir kısıt bulunmadı.
-- **Doğrulanamayan:** Hugging Face model kartı (ağ engeli). Ayrı bir veri kullanım notu varsa onu göremedim.
-- **KARAR:** Kokoro ile ticari kullanım kabul edilir. Ses taslak/üretim için kullanılabilir, video açıklamasında madde 1 uygulanır.
+- **Model kartı (Hugging Face, arama aracı üzerinden resmî sayfanın içeriği, 2026-10-06):** Lisans `apache-2.0`. "Ağırlıklar ve resmî ses paketleri Apache-2.0". Eğitim verisi: yalnızca izin verilen/telifsiz ses (kamu malı, Apache/MIT vb. lisanslı) ve **büyük sağlayıcıların kapalı TTS modellerinden üretilmiş sentetik ses**; açık TTS modellerinden veya özel ses klonlarından sentetik veri yok. "Ticari ve ticari olmayan kullanıma hazır".
+- **Doğrulanamayan:** Eğitimde kullanılan kapalı sağlayıcıların kendi koşulları (model kartı bunu izinli saydığını belirtiyor, sağlayıcıların koşullarını ayrıca okumadım). Sayfanın kendisi ağ engeli yüzünden doğrudan açılamadı.
+- **KARAR:** **Kokoro ses örnekleri (af_heart, af_bella, af_sky, bf_emma) YouTube videolarında ticari olarak kullanılabilir.** Madde 1 (sentetik içerik açıklaması = Evet) ve madde 2 (içerik çeşitliliği) uygulanır. Kalan küçük belirsizlik: eğitim verisindeki kapalı sağlayıcı sentetik sesleri.
 
 ## 5. Diğer
 - Yapay zekâ sesi seçildi (kullanıcı kendi İngilizce sesini kullanamıyor, aksan farkı).
