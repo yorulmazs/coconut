@@ -7,7 +7,7 @@
 - Yeşil-sarı gözler, çatık "ciddi" bakış (varsayılan ifade)
 - Pembe-kahve burun, açık gri-bej çene/yüz alt kısmı
 - Göğüste beyaz leke, ön patilerde beyaz uçlar
-- Boyunda krem renkli örgü çiçek tasma, çıngırak, sarı çiçek künye (yanında kedi yüzlü künye de var)
+- Boyunda krem renkli, boynun önünde **simetrik duran** tasma bandı; bir yanda örgü çiçek, ortadan çıngırak ve sarı çiçek künye sarkar (gerçekte yanında kedi yüzlü künye de var). Tasma gövdeyle hareket eder ve yamulmaz
 
 ## Her karede olması gerekenler (kalite kontrol)
 - [ ] Tüy rengi `#6d7480`

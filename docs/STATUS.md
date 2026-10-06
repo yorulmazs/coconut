@@ -1,6 +1,6 @@
 # Durum ve yol haritası
 
-_Son güncelleme: 2026-10-05 (EP00 eklendi)_
+_Son güncelleme: 2026-10-06 (motor v2, onay kapısı)_
 
 ## Bitenler
 - [x] Konsept: Coconut the Cat (çekingen ama ailesine uysal kedi), İngilizce, 2-5 yaş
@@ -10,7 +10,11 @@ _Son güncelleme: 2026-10-05 (EP00 eklendi)_
 - [x] Ayrı depo: bu depo
 - [x] **EP00 "Meet Coconut!"** (tanıtım, 70 sn): senaryo `docs/scripts/ep00-meet-coconut.md`, bölüm dosyası `episodes/ep00-meet-coconut.json`, sessiz taslak video üretildi (`npm run render -- episodes/ep00-meet-coconut.json`)
 
+- [x] **Motor v2 (kodda, video üretilmedi):** tasma yeniden çizildi (boyunda simetrik bant, çıngırak/künye sallanır), gövde ezilme-esneme, bakış yönü ve kafa dönüşü, bağımsız kulaklar, kalkan ve sallanan patiler, kapı + ziyaretçi, kamera yakınlaşması, kalpler, kuyruk ucu gecikmesi. `node render.js <bolum.json> --stills 3,12` ile tek kare kontrolü yapılır
+- [x] **Üretim kapısı:** `CLAUDE.md`, `docs/BRIEF.md`, `.claude/skills/confirm-brief`: kullanıcı "yeni video yap" demeden video üretilmez
+
 ## Açık işler (öncelik sırasıyla)
+0. [ ] **EP00 yeniden yapım (kullanıcı onayı bekliyor):** Mevcut `episodes/ep00-meet-coconut.json` eski motorun az hareketli zaman çizelgesi. Yeni motorun hareketleriyle yeniden yazılacak ve kullanıcı "yeni video yap" deyince üretilecek. Eski EP00 videosu kullanıcı tarafından "çok basit, hareket yok" diye reddedildi
 1. [ ] **EP00 sesi:** Anlatıcı sesini WAV kaydet, Rhubarb ile ağız verisi üret, `audio` + `mouthCues` ekle, yeniden render et. Not: Videoda ağız şekilleri henüz sesle senkron değil, ses yok
 2. [ ] **EP00 sonrası EP01:** "Coconut Meets a Visitor" (senaryo yazılacak)
 3. [ ] Mac'te kurulum ve `npm run pilot` testi (kullanıcı deneyecek, hata olursa düzelt)

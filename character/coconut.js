@@ -15,6 +15,20 @@ const MOUTHS = {
   H: { type: 'open', rx: 10, ry: 6 }
 };
 
+const DEFAULTS = {
+  offsetX: 0, offsetY: 0,
+  squashX: 1, squashY: 1,        // squash & stretch around the floor point
+  tilt: 0, headBob: 0,
+  lookX: 0, lookY: 0,            // -1..1, fake 3D head turn + eye direction
+  earAngle: 0, earL: 0, earR: 0,
+  eyeWide: 0, grumpy: 1, blink: 0, eyesClosed: 0,
+  tailAngle: 0, tailTip: 0,
+  breath: 1,
+  mouth: 'X',
+  pawL: 0, pawR: 0, pawWave: 0,  // lift 0..1, wave in degrees
+  bell: 0                        // collar tag swing in degrees
+};
+
 function mouthSVG(shape) {
   const p = palette;
   const m = MOUTHS[shape] || MOUTHS.X;
@@ -27,65 +41,109 @@ function mouthSVG(shape) {
   return `<path d="M480,322 Q480,334 466,336 M480,322 Q480,334 494,336" stroke="${p.mouthLine}" stroke-width="3" fill="none" stroke-linecap="round"/>`;
 }
 
-// params: offsetY, tilt, earAngle, eyeWide, grumpy (0..1), blink (0..1),
-//         tailAngle, breath, mouth (A-H,X)
+// point on the collar curve (quadratic bezier across the front of the neck)
+function collarPoint(t) {
+  const P0 = [408, 366], P1 = [480, 404], P2 = [552, 366];
+  const u = 1 - t;
+  return [u * u * P0[0] + 2 * u * t * P1[0] + t * t * P2[0], u * u * P0[1] + 2 * u * t * P1[1] + t * t * P2[1]];
+}
+
+function legSVG(side, lift, wave) {
+  const p = palette;
+  const s = side === 'L' ? -1 : 1;
+  const shoulder = [480 + s * 40, 398];
+  const restPaw = [480 + s * 52, 462];   // front legs reach down to the floor
+  const upPaw = [480 + s * 168, 318];    // lifted paw: out beside the body so it reads against the background
+  const paw = [restPaw[0] + (upPaw[0] - restPaw[0]) * lift, restPaw[1] + (upPaw[1] - restPaw[1]) * lift];
+  return `<g transform="rotate(${wave * lift},${shoulder[0]},${shoulder[1]})">
+    <path d="M${shoulder[0]},${shoulder[1]} L${paw[0]},${paw[1]}" stroke="${p.fur}" stroke-width="42" stroke-linecap="round" fill="none"/>
+    <ellipse cx="${paw[0]}" cy="${paw[1] + 6}" rx="21" ry="11" fill="${p.chest}"/>
+  </g>`;
+}
+
+// Collar: a band across the front of the neck, a crochet flower on one side,
+// and the bell + yellow flower tag hanging from the centre. Attached to the body, symmetric band.
+function collarSVG(bell) {
+  const p = palette;
+  const [bx, by] = collarPoint(0.5);
+  const [fx, fy] = collarPoint(0.26);
+  const beads = [0.14, 0.38, 0.62, 0.74, 0.86].map(t => {
+    const [x, y] = collarPoint(t);
+    return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4.5" fill="${p.collarBead}"/>`;
+  }).join('');
+  const petals = [0, 60, 120, 180, 240, 300].map(a => {
+    const r = a * Math.PI / 180;
+    return `<circle cx="${(fx + Math.cos(r) * 9).toFixed(1)}" cy="${(fy + Math.sin(r) * 9).toFixed(1)}" r="7" fill="${p.collar}" stroke="${p.collarBead}" stroke-width="1.5"/>`;
+  }).join('');
+  return `
+    <path d="M408,366 Q480,404 552,366" fill="none" stroke="${p.collar}" stroke-width="15" stroke-linecap="round"/>
+    ${beads}
+    ${petals}<circle cx="${fx.toFixed(1)}" cy="${fy.toFixed(1)}" r="5" fill="${p.collarBead}"/>
+    <g transform="rotate(${bell},${bx},${by})">
+      <circle cx="${bx}" cy="${by + 1}" r="3" fill="${p.bellStroke}"/>
+      <circle cx="${bx - 6}" cy="${by + 19}" r="9" fill="${p.bell}" stroke="${p.bellStroke}" stroke-width="2"/>
+      <g transform="translate(${bx + 15},${by + 24})">
+        <g fill="${p.flower}"><circle cx="0" cy="-9" r="6"/><circle cx="9" cy="-3" r="6"/><circle cx="6" cy="8" r="6"/><circle cx="-6" cy="8" r="6"/><circle cx="-9" cy="-3" r="6"/></g>
+        <circle cx="0" cy="0" r="9" fill="${p.flower}"/><circle cx="0" cy="0" r="4.5" fill="${p.flowerCenter}"/>
+      </g>
+    </g>`;
+}
+
 function coconutSVG(params = {}) {
   const p = palette;
-  const {
-    offsetY = 0, tilt = 0, earAngle = 0, eyeWide = 0, grumpy = 1,
-    blink = 0, tailAngle = 0, breath = 1, mouth = 'X'
-  } = params;
-  const ry = (22 + 8 * eyeWide) * (1 - 0.92 * blink);
-  const pry = Math.max(1, (18 + 8 * eyeWide) * (1 - 0.92 * blink));
-  const prx = 5 + 4 * eyeWide;
-  const lid = 26 * grumpy * (1 - blink);
+  const d = { ...DEFAULTS, ...params };
+  const blink = Math.max(d.blink, d.eyesClosed);
+  const ry = (22 + 8 * d.eyeWide) * (1 - 0.92 * blink);
+  const pry = Math.max(1, (18 + 8 * d.eyeWide) * (1 - 0.92 * blink));
+  const prx = 5 + 4 * d.eyeWide;
+  const lid = 26 * d.grumpy * (1 - blink);
+  const lx = d.lookX, ly = d.lookY;
+  const pupX = lx * 7, pupY = ly * 4;
+  const faceDX = lx * 13, faceDY = ly * 5;
+  const tailTip = d.tailTip;
 
   return `
-  <g transform="translate(0,${offsetY})">
-    <g transform="rotate(${tailAngle},600,400)">
-      <path d="M600,400 C680,400 710,330 680,290" stroke="${p.fur}" stroke-width="30" stroke-linecap="round" fill="none"/>
+  <g transform="translate(${d.offsetX},${d.offsetY})">
+   <g transform="translate(480,440) scale(${d.squashX},${d.squashY}) translate(-480,-440)">
+    <g transform="rotate(${d.tailAngle},600,400)">
+      <path d="M600,402 C670,402 ${704 + tailTip * 0.5},348 ${682 + tailTip},292" stroke="${p.fur}" stroke-width="30" stroke-linecap="round" fill="none"/>
     </g>
-    <g transform="translate(480,440) scale(1,${breath}) translate(-480,-440)">
+    <g transform="translate(480,440) scale(1,${d.breath}) translate(-480,-440)">
       <ellipse cx="480" cy="385" rx="150" ry="112" fill="${p.fur}"/>
       <ellipse cx="480" cy="408" rx="46" ry="52" fill="${p.chest}"/>
-      <ellipse cx="425" cy="440" rx="34" ry="21" fill="${p.fur}"/>
-      <ellipse cx="415" cy="450" rx="17" ry="9" fill="${p.chest}"/>
-      <ellipse cx="535" cy="440" rx="34" ry="21" fill="${p.fur}"/>
-      <ellipse cx="545" cy="450" rx="17" ry="9" fill="${p.chest}"/>
     </g>
-    <g transform="rotate(${tilt},480,340)">
-      <g transform="rotate(${earAngle},420,215)">
+    ${legSVG('L', d.pawL, d.pawWave)}
+    ${legSVG('R', d.pawR, d.pawWave)}
+    <g transform="translate(${lx * 10},${d.headBob}) rotate(${d.tilt},480,340)">
+      <g transform="translate(${lx * 5},0) rotate(${d.earAngle + d.earL},420,215)">
         <polygon points="395,225 372,135 455,196" fill="${p.fur}"/>
         <polygon points="401,208 387,157 436,196" fill="${p.earInner}"/>
       </g>
-      <g transform="rotate(${-earAngle},540,215)">
+      <g transform="translate(${lx * 5},0) rotate(${-d.earAngle + d.earR},540,215)">
         <polygon points="565,225 588,135 505,196" fill="${p.fur}"/>
         <polygon points="559,208 573,157 524,196" fill="${p.earInner}"/>
       </g>
       <ellipse cx="480" cy="287" rx="108" ry="93" fill="${p.fur}"/>
-      <ellipse cx="480" cy="248" rx="30" ry="20" fill="${p.furShadow}" opacity=".7"/>
-      <ellipse cx="480" cy="325" rx="52" ry="36" fill="${p.muzzle}"/>
-      <ellipse cx="437" cy="282" rx="25" ry="${ry}" fill="${p.eyeLeft}"/>
-      <ellipse cx="437" cy="282" rx="${prx}" ry="${pry}" fill="${p.pupil}"/>
-      <ellipse cx="523" cy="282" rx="25" ry="${ry}" fill="${p.eyeRight}"/>
-      <ellipse cx="523" cy="282" rx="${prx}" ry="${pry}" fill="${p.pupil}"/>
-      <polygon points="408,250 470,250 470,${252 + lid}" fill="${p.fur}"/>
-      <polygon points="552,250 490,250 490,${252 + lid}" fill="${p.fur}"/>
-      <path d="M470,310 L490,310 L480,322 Z" fill="${p.nose}"/>
-      ${mouthSVG(mouth)}
-      <g stroke="${p.whisker}" stroke-width="2" stroke-linecap="round" opacity=".9">
-        <line x1="438" y1="326" x2="360" y2="312"/><line x1="438" y1="334" x2="358" y2="338"/><line x1="440" y1="342" x2="368" y2="360"/>
-        <line x1="522" y1="326" x2="600" y2="312"/><line x1="522" y1="334" x2="602" y2="338"/><line x1="520" y1="342" x2="592" y2="360"/>
+      <g transform="translate(${faceDX},${faceDY})">
+        <ellipse cx="480" cy="248" rx="30" ry="20" fill="${p.furShadow}" opacity=".7"/>
+        <ellipse cx="480" cy="325" rx="52" ry="36" fill="${p.muzzle}"/>
+        <ellipse cx="437" cy="282" rx="25" ry="${ry}" fill="${p.eyeLeft}"/>
+        <ellipse cx="${437 + pupX}" cy="${282 + pupY}" rx="${prx}" ry="${pry}" fill="${p.pupil}"/>
+        <ellipse cx="523" cy="282" rx="25" ry="${ry}" fill="${p.eyeRight}"/>
+        <ellipse cx="${523 + pupX}" cy="${282 + pupY}" rx="${prx}" ry="${pry}" fill="${p.pupil}"/>
+        <polygon points="408,250 470,250 470,${252 + lid}" fill="${p.fur}"/>
+        <polygon points="552,250 490,250 490,${252 + lid}" fill="${p.fur}"/>
+        <path d="M470,310 L490,310 L480,322 Z" fill="${p.nose}"/>
+        ${mouthSVG(d.mouth)}
+        <g stroke="${p.whisker}" stroke-width="2" stroke-linecap="round" opacity=".9">
+          <line x1="438" y1="326" x2="360" y2="312"/><line x1="438" y1="334" x2="358" y2="338"/><line x1="440" y1="342" x2="368" y2="360"/>
+          <line x1="522" y1="326" x2="600" y2="312"/><line x1="522" y1="334" x2="602" y2="338"/><line x1="520" y1="342" x2="592" y2="360"/>
+        </g>
       </g>
     </g>
-    <ellipse cx="480" cy="378" rx="76" ry="15" fill="none" stroke="${p.collar}" stroke-width="15"/>
-    <g fill="${p.collarBead}"><circle cx="425" cy="383" r="8"/><circle cx="445" cy="391" r="8"/><circle cx="515" cy="391" r="8"/><circle cx="535" cy="383" r="8"/></g>
-    <g transform="translate(498,402)">
-      <g fill="${p.flower}"><circle cx="0" cy="-13" r="8"/><circle cx="13" cy="-4" r="8"/><circle cx="8" cy="11" r="8"/><circle cx="-8" cy="11" r="8"/><circle cx="-13" cy="-4" r="8"/></g>
-      <circle cx="0" cy="0" r="12" fill="${p.flower}"/><circle cx="0" cy="0" r="6" fill="${p.flowerCenter}"/>
-    </g>
-    <circle cx="466" cy="398" r="9" fill="${p.bell}" stroke="${p.bellStroke}" stroke-width="2"/>
+    <g transform="rotate(${d.tilt * 0.5},480,360)">${collarSVG(d.bell)}</g>
+   </g>
   </g>`;
 }
 
-module.exports = { coconutSVG, MOUTHS };
+module.exports = { coconutSVG, MOUTHS, DEFAULTS };

@@ -5,6 +5,7 @@ description: Yeni bir Coconut bölümü başlatır: senaryo iskeleti, episodes/*
 
 # Yeni bölüm iskeleti
 
+0. **Önce `confirm-brief` becerisini uygula** ve `docs/BRIEF.md` oku. Kullanıcı "yeni video yap" diyene kadar 4. adımdaki render'a ve herhangi bir video gönderimine GEÇME.
 1. `docs/EPISODE_IDEAS.md` ve `docs/STATUS.md` oku. Hangi fikir seçilecek? Belirsizse kullanıcıya sor.
 2. `script-writer` ajanıyla senaryoyu `docs/scripts/<epNN-ad>.md` olarak yaz (İngilizce).
 3. `episodes/pilot-visitor.json` dosyasını şablon alıp `episodes/<epNN-ad>.json` oluştur:

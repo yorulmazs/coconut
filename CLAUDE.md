@@ -15,6 +15,9 @@ Sahibi, kedisi **Coconut**'tan esinlenen bir **çocuk animasyonu YouTube kanalı
 ## Coconut (gerçek kedi) özeti
 Mavi-gri kısa tüylü, tombul; yeşil-sarı gözler, ciddi/çatık bakış; göğüste beyaz leke, ön patilerde beyaz uçlar; boynunda krem örgü çiçek tasma + çıngırak + sarı çiçek künye. **Kişilik:** ailesine (Mom & Dad) çok uysal, onlarla yatıp kalkar; yabancıya çekingen, ısınması zaman alır. Tam kurallar: `CHARACTER_BIBLE.md`.
 
+## Üretim kapısı (EN ÖNEMLİ KURAL)
+**Kullanıcı açıkça "yeni video yap" (veya eşdeğeri) demeden hiçbir video üretme ve gönderme.** Her video için ayrı onay gerekir, önceki onay sonrakini kapsamaz. Üretimden önce `.claude/skills/confirm-brief` becerisini uygula: `docs/BRIEF.md` oku, isteneni geri yaz, kabul ölçütlerini çıkar, onay al. Üretince kareleri kendin kontrol et ve sağlanmayan ölçütü dürüstçe söyle. Kullanıcı aynı geri bildirimi ikinci kez vermek zorunda kalmamalı: geri bildirimleri `docs/BRIEF.md` içine yaz.
+
 ## Sert kurallar
 - **Çocuk güvenliği:** Tırmalama, tıslama, vurma sahnede gösterilmez. Çekingenlik = saklanma, sırt çevirme, kuyruk kabartma, "Hmph.", "Not today.". Yabancıya tepki yumuşatılır ve sabırla ısınma hikâyesine çevrilir.
 - **Mahremiyet:** Kullanıcının fotoğraflarında adres, plaka, belge ve imza görünmüştü. Hiçbir çıktıya (video, görsel, metin) gerçek adres, plaka, kişisel belge girmez. Instagram'a konacak gerçek fotoğraflar için bulanıklaştırma/kırpma hatırlat.
