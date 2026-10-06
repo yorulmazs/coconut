@@ -5,6 +5,7 @@ Her üretimden önce bunu oku. Kullanıcı bir şeyi bir kez söylediyse tekrar 
 ## Süreç kuralı
 - **Kullanıcı açıkça "yeni video yap" (veya eşdeğeri) demeden video üretme veya gönderme.** Her video için ayrı onay gerekir. (Kod geliştirmek ve kendi kontrolün için tek kare PNG üretmek serbest, kullanıcıya gönderme.)
 - Üretimden önce `confirm-brief` becerisini uygula: isteneni geri yaz, kabul ölçütlerini çıkar, onay al.
+- **"Mantıklı geldi" onay değildir (kullanıcı uyardı, 2026-10-06).** Kullanıcı bir fikri beğendiğini söylerse önce sorularını cevapla, sonra "bunu yapayım mı?" diye açıkça sor. Net "yap" demeden yeni konsept için kod yazma, test klibi veya test videosu da üretme. ("Real Coconut!" bölüm sonu fikrinde kod, onay gelmeden yazılmaya başlandı; kullanıcı durdurdu. Kod commit edilmeden kenara kaldırıldı.)
 
 - **Politika/lisans:** Kullanıcıya "kontrol edin" deme. Kendin birincil kaynaktan doğrula ve en güvenli kararı uygula (bkz. `docs/POLICY_NOTES.md`). Bu bundan sonra HER ZAMAN geçerli (kullanıcının açık talimatı, 2026-10-06).
 - **Soru-cevap tarzı (kullanıcı birkaç kez uyardı):** Soru sorulunca tam araştır, emin ol, SONRA kesin cevap ver. Cevabı "doğrulamadım/okumadım/karar sizde" ile açık bırakma. Açık nokta kalırsa kapatmak için araştırmaya devam et. Öneri araştırmaya dayansın.
