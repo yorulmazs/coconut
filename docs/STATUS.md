@@ -1,6 +1,6 @@
 # Durum ve yol haritası
 
-_Son güncelleme: 2026-10-06 (motor v2, onay kapısı)_
+_Son güncelleme: 2026-10-06 (EP01 senaryosu)_
 
 ## Bitenler
 - [x] Konsept: Coconut the Cat (çekingen ama ailesine uysal kedi), İngilizce, 2-5 yaş
@@ -30,10 +30,12 @@ _Son güncelleme: 2026-10-06 (motor v2, onay kapısı)_
 
 - [x] Format kararı: sessiz Coconut + anlatıcı + öğretici bölümler (`docs/RESEARCH.md`). EP00 10 sn sesi sadece anlatıcıyla yeniden üretildi, balonlar sembol oldu
 
+- [x] **EP01 konusu seçildi ve senaryo yazıldı:** "Coconut and the Big Box" (konum kelimeleri IN, ON, BEHIND), ~2:40, `docs/scripts/ep01-coconut-and-the-big-box.md`. Gerekçe `docs/RESEARCH.md`. Kullanıcı onayı bekleniyor
+
 ## Açık işler (öncelik sırasıyla)
 0. [~] **EP00 10 sn sürümü üretildi (`episodes/ep00-meet-coconut-10s.json`), kullanıcı geri bildirimi bekleniyor.** (Eski not:) Mevcut `episodes/ep00-meet-coconut.json` eski motorun az hareketli zaman çizelgesi. Yeni motorun hareketleriyle yeniden yazılacak ve kullanıcı "yeni video yap" deyince üretilecek. Eski EP00 videosu kullanıcı tarafından "çok basit, hareket yok" diye reddedildi
 1. [~] **EP00 10 sn sesli video üretildi ve gönderildi (2026-10-06)**: anlatıcı af_heart, sessiz Coconut, sembol balonlar, ses 48 kHz/128 kb/s. Kullanıcı geri bildirimi bekleniyor
-2. [ ] **EP00 sonrası EP01:** "Coconut Meets a Visitor" (senaryo yazılacak)
+2. [~] **EP01 "Coconut and the Big Box":** senaryo yazıldı, kullanıcı onayı bekleniyor. Sonra: kutu nesnesi (ön/arka katman), oyuncaklar, esneme ağzı, "z z z" sembolü motora eklenecek, tek karelerle kontrol, ses (`make_voice.py`), kullanıcı "yeni video yap" deyince üretim. ("Coconut Meets a Visitor" çeşitlilik kuralı nedeniyle en erken EP04)
 3. [ ] Mac'te kurulum ve `npm run pilot` testi (kullanıcı deneyecek, hata olursa düzelt)
 4. [ ] Varlık setini genişlet: yandan görünüş, yürüme, 5 ifade, ikinci mekân (yatak odası), Mom & Dad karakterleri
 5. [ ] Kanal kimliği paketi: kanal adı, logo, biyografi (EN), Instagram biyografisi

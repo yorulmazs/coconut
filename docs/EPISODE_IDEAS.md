@@ -11,8 +11,11 @@ Her bölümde net bir kazanım (duygular, renkler, sayılar, nezaket, rutin) ve 
 ## EP00 (yapıldı)
 **Meet Coconut!** Kanal tanıtımı, 70 sn. Senaryo: `docs/scripts/ep00-meet-coconut.md`.
 
+## EP01 (senaryo yazıldı, kullanıcı onayı bekliyor)
+**Coconut and the Big Box:** konum kelimeleri IN, ON, BEHIND (+OUT). Senaryo: `docs/scripts/ep01-coconut-and-the-big-box.md`. Seçim gerekçesi: `docs/RESEARCH.md` "EP01 konu seçimi".
+
 ## Coconut'ın gerçek huyundan (öncelikli)
-1. **Coconut Meets a Visitor:** Kapı çalar, saklanır, misafir sabırla bekler, yavaşça çıkar. *Ders: yeni biriyle tanışmak zaman alır.* **(EP01)**
+1. **Coconut Meets a Visitor:** Kapı çalar, saklanır, misafir sabırla bekler, yavaşça çıkar. *Ders: yeni biriyle tanışmak zaman alır.* (EP00 aynı arkı kullandığı için en erken EP04'e ertelendi, çeşitlilik kuralı)
 2. **Coconut Says "Not Yet":** Alanına izinsiz gelen biri. *Ders: nazikçe sınır koymak.*
 3. **Mom and Dad's Cozy Bed:** Gece uyku rutini, sarılma. *Ders: güven ve sevgi. Uyku öncesi sakin bölüm.*
 4. **Coconut and the Little Neighbor:** Komşu çocuk her gün biraz daha yakınlaşır. *Ders: sabırla dostluk.*
@@ -20,7 +23,7 @@ Her bölümde net bir kazanım (duygular, renkler, sayılar, nezaket, rutin) ve 
 6. **Coconut's First Friend:** Sonunda bir dost (kuş, köpek, başka kedi).
 
 ## Hafif bölümler
-7. Coconut Finds a Box (şekiller)
+7. ~~Coconut Finds a Box (şekiller)~~ → EP01 oldu (konum kelimeleri)
 8. Coconut and the Red Dot (sabır)
 9. Coconut Says Good Morning (sabah rutini)
 10. Bath Time Bubbles (korku, cesaret)
