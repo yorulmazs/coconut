@@ -33,9 +33,9 @@ const backgrounds = {
     <ellipse cx="480" cy="500" rx="250" ry="26" fill="#000" opacity=".08"/>
     <rect x="766" y="126" width="138" height="298" rx="6" fill="#d9ccae"/>
     <rect x="770" y="130" width="130" height="294" fill="${open > 0.05 ? '#cfe3ee' : '#a8794f'}"/>
-    ${open > 0.4 ? visitorSVG(s) : ''}
     <rect x="770" y="130" width="${panelW}" height="294" fill="#a8794f" stroke="#8c6240" stroke-width="3"/>
-    ${open < 0.3 ? '<circle cx="880" cy="285" r="7" fill="#e6c36a"/>' : ''}`;
+    ${open < 0.3 ? '<circle cx="880" cy="285" r="7" fill="#e6c36a"/>' : ''}
+    ${open > 0.4 ? visitorSVG(s) : ''}`;
   }
 };
 
