@@ -6,6 +6,9 @@ Her üretimden önce bunu oku. Kullanıcı bir şeyi bir kez söylediyse tekrar 
 - **Kullanıcı açıkça "yeni video yap" (veya eşdeğeri) demeden video üretme veya gönderme.** Her video için ayrı onay gerekir. (Kod geliştirmek ve kendi kontrolün için tek kare PNG üretmek serbest, kullanıcıya gönderme.)
 - Üretimden önce `confirm-brief` becerisini uygula: isteneni geri yaz, kabul ölçütlerini çıkar, onay al.
 
+- **Politika/lisans:** Kullanıcıya "kontrol edin" deme. Kendin birincil kaynaktan doğrula ve en güvenli kararı uygula (bkz. `docs/POLICY_NOTES.md`). Bu bundan sonra HER ZAMAN geçerli (kullanıcının açık talimatı, 2026-10-06).
+- **Ses:** Kullanıcı İngilizceyi kendi sesiyle yapamıyor (aksan). Yapay zekâ sesi kullanılacak (Kokoro denemeleri: af_heart, af_bella, af_sky, bf_emma). Seçim kullanıcıdan bekleniyor.
+
 ## Kalite çıtası (EP00 geri bildirimi, 2026-10-06)
 Kullanıcı ilk EP00 taslağı için dedi ki: **"çok basit olmuş, hiç hareket yok, ben gerçek animasyon istiyorum."** ve **"Coconut'ın tasması yamuk duruyor."**
 

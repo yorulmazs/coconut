@@ -2,6 +2,9 @@
 
 Format: 2-3 dk, giriş şarkısı + küçük sorun + denemeler + çözüm + kısa kapanış. Sakin tempo, tekrarlı cümleler. Her fikir gerçek Coconut'ın huyundan gelir.
 
+## Çeşitlilik kuralı (YouTube "inauthentic content" riski, bkz. `docs/POLICY_NOTES.md`)
+"Coconut çekiniyor, sonra ısınıyor" arkı en fazla her 4 bölümden 1'inde kullanılır. Bölümler farklı durum, mekân, problem ve sonuçlara sahip olmalı. Her bölümde yeni bir olay ve farklı bir sonuç.
+
 ## EP00 (yapıldı)
 **Meet Coconut!** Kanal tanıtımı, 70 sn. Senaryo: `docs/scripts/ep00-meet-coconut.md`.
 

@@ -17,6 +17,9 @@ _Son güncelleme: 2026-10-06 (motor v2, onay kapısı)_
 
 - [x] YouTube animasyon üretimi ve repo taraması `docs/RESEARCH.md`'ye kaydedildi
 
+- [x] Politika ve lisans doğrulaması: `docs/POLICY_NOTES.md` (AI ses açıklaması, tekrarlayan içerik riski, made for kids, Kokoro lisansı)
+- [x] Kokoro ses örnekleri üretildi (af_heart, af_bella, af_sky, bf_emma), kullanıcının seçimi bekleniyor
+
 ## Açık işler (öncelik sırasıyla)
 0. [~] **EP00 10 sn sürümü üretildi (`episodes/ep00-meet-coconut-10s.json`), kullanıcı geri bildirimi bekleniyor.** (Eski not:) Mevcut `episodes/ep00-meet-coconut.json` eski motorun az hareketli zaman çizelgesi. Yeni motorun hareketleriyle yeniden yazılacak ve kullanıcı "yeni video yap" deyince üretilecek. Eski EP00 videosu kullanıcı tarafından "çok basit, hareket yok" diye reddedildi
 1. [ ] **EP00 sesi:** Anlatıcı sesini WAV kaydet, Rhubarb ile ağız verisi üret, `audio` + `mouthCues` ekle, yeniden render et. Not: Videoda ağız şekilleri henüz sesle senkron değil, ses yok

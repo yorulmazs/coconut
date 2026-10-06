@@ -39,6 +39,10 @@ Inauthentic content politikası: şablon/tekrar eden içerik gelir elde edemeyeb
 4. Kullanıcı "yeni video yap" deyince üret, oyun kitabı kontrol listesini uygula, sağlanmayanı dürüstçe söyle.
 5. Yeni geri bildirim ve karar `docs/BRIEF.md`, `docs/STATUS.md`, bu dosyaya yazılır ve push edilir.
 
+## Politika ve lisans kuralı (kullanıcının açık talimatı)
+Kullanıcıya "politikayı/lisansı kontrol edin" **deme**. Kendin birincil kaynaktan doğrula (YouTube Help, projenin LICENSE/README dosyaları, hizmetin kullanım koşulları), ne doğrulayabildiğini ve ne doğrulayamadığını söyle, en güvenli kararı ver ve uygula. Doğrulanmış notlar: `docs/POLICY_NOTES.md`. Ağ engeli varsa (ör. `support.google.com`, `huggingface.co`) atlatmaya çalışma, alternatif birincil kaynak dene, ve yalnızca engelin kendisini bir kez bildir.
+Özet kararlar: yapay zekâ sesi kullanılan her videoda "altered or synthetic content" = Evet (`contains_synthetic_media: true`), kanal ve videolar "made for kids" = Evet, tekrarlayan şablon hikâyeden kaçın ("çekingen ziyaretçi" arkı en fazla her 4 bölümden 1), müzik ve hikâye çeşitli olsun.
+
 ## Sert kurallar
 - **Çocuk güvenliği:** Tırmalama, tıslama, vurma sahnede gösterilmez. Çekingenlik = saklanma, sırt çevirme, kuyruk kabartma, "Hmph.", "Not today.". Yabancıya tepki yumuşatılır ve sabırla ısınma hikâyesine çevrilir.
 - **Mahremiyet:** Kullanıcının fotoğraflarında adres, plaka, belge ve imza görünmüştü. Hiçbir çıktıya (video, görsel, metin) gerçek adres, plaka, kişisel belge girmez. Instagram'a konacak gerçek fotoğraflar için bulanıklaştırma/kırpma hatırlat.
