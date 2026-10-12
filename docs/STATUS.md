@@ -57,6 +57,10 @@ Zayıf noktalardan hangisi önce: pati/ifadeler, yürüme döngüsü + yan gör�
 - Seslendirme: yapay ses (kullanıcı aksan nedeniyle kendi sesini kullanamıyor). Kanal sesi af_heart, kullanıcı dinleyip değiştirmek isterse değişir
 - `fitcite` deposundaki [PR #2](https://github.com/yorulmazs/fitcite/pull/2) Coconut'ı içermiyor, kullanıcı kapatabilir
 
+## Kullanım notu (eski oturumdan, 2026-10-06)
+Kullanıcı kullanımı azaltmayı sordu. Öneriler: çok uzayan oturum yerine yeni oturum açmak (proje hafızası `CLAUDE.md` ve `docs/` içinde, bilgi kaybolmaz), rutin işler için daha hafif model, odaklı istekler. Pro/Max'ta kullanım aboneliğe dahildir, oturum kaydındaki dolar tahmini fatura değildir (bkz. `docs/BRIEF.md` "Sayılar").
+Eski oturum "Çocuk animasyonu YouTube için" 2026-10-12'de arşivlendi; bütün işi `main` ve bu daldaki belgelerde.
+
 ## Büyüme planı
 | Platform | İçerik | Sıklık |
 |---|---|---|
