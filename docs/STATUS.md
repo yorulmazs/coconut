@@ -34,6 +34,9 @@ _Son güncelleme: 2026-10-06 (EP01 senaryosu)_
 
 - [x] **"Real Coconut!" kapanışı kabul edildi** (sadece evde çekilebilen davranışlar, kullanıcı çeker). Taslak kod `git stash` içinde, commit edilmedi; uygulama için kullanıcının açık "yap" onayı bekleniyor
 
+- [x] **Animasyon paketi 1, sahne zenginliği (2026-10-12):** oda yeniden çizildi, renk psikolojisi araştırmasına dayalı palet (`docs/ANIMATION_PLAYBOOK.md`), paralaks katmanlar, bulut/kuş/bitki/perde/güneş huzmesi, mavi tünel, üstte sarı alt yazı şeridi. Tek karelerle kontrol edildi, video üretilmedi
+- [ ] Animasyon paketi 2: ifade seti (ciddi, şaşkın, mutlu, uykulu, meraklı) + pati okunurluğu. Paket 3: hareket kütüphanesi + kutu. Paket 4: yan görünüş + yürüme
+
 ## Açık işler (öncelik sırasıyla)
 0. [~] **EP00 10 sn sürümü üretildi (`episodes/ep00-meet-coconut-10s.json`), kullanıcı geri bildirimi bekleniyor.** (Eski not:) Mevcut `episodes/ep00-meet-coconut.json` eski motorun az hareketli zaman çizelgesi. Yeni motorun hareketleriyle yeniden yazılacak ve kullanıcı "yeni video yap" deyince üretilecek. Eski EP00 videosu kullanıcı tarafından "çok basit, hareket yok" diye reddedildi
 1. [~] **EP00 10 sn sesli video üretildi ve gönderildi (2026-10-06)**: anlatıcı af_heart, sessiz Coconut, sembol balonlar, ses 48 kHz/128 kb/s. Kullanıcı geri bildirimi bekleniyor

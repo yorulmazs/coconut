@@ -41,6 +41,15 @@ Kaynaklar (kendi cümlelerimle özetlendi, kopyalanmadı): Disney'in 12 prensibi
 - Çok süslü ortam dikkati dağıtıyor: aşırı dekore sınıfta anaokulu çocukları zamanın %39'unda konu dışıydı (sade sınıfta %28), öğrenme kazancı %18'e karşı %33 ([Fisher, Godwin, Seltman 2014, Psychological Science, CMU haberi](https://www.cmu.edu/news/stories/archives/2014/may/may27_decoratedclassrooms.html)). **Çıkarım:** renk canlı olsun ama detay, ders ve karakterle ilgisizse az ve karakterin arkasında değil.
 - 9 dakikalık hızlı tempolu, yoğun fantastik çizgi film 4 yaş çocukların yürütücü işlevlerini hemen düşürdü ([Lillard ve Peterson 2011, Pediatrics](https://sciencedaily.com/releases/2011/09/110912075658.htm)). **Çıkarım:** canlılık renk ve ışıktan gelsin, hızlı kesme ve yanıp sönmeden değil.
 
+### Uygulanan oda paleti (2026-10-12, kullanıcının isteğiyle araştırmaya göre seçildi, `scenes/room.js` içindeki `ROOM`)
+- Parlak/açık renkler olumlu, koyu kahve/siyah/gri olumsuz duygu çağrıştırıyor (Boyatzis ve Varghese 1994, 5 ve 6,5 yaş; 4-5 yaş Tayland ve Yunanistan çalışmaları). **Kural:** sahnede büyük koyu alan yok, eski kahve kapı kaldırıldı. Sahnedeki tek gri şey Coconut, böylece öne çıkıyor.
+- Çekicilik en çok yüksek parlaklık + maksimumun biraz altında doygunlukta; çok düşük kontrast odaklanmayı bozuyor (Frontiers 2023, 4-7 yaş göz izleme). **Kural:** neon değil, açık ve temiz renkler; eski bej/krem soluk palet bırakıldı.
+- Sıcak renkler biraz önde; anaokulu sınıf çalışmasında düşük doygunlukta kırmızı ve yüksek doygunlukta mavi duvarlar olumlu duygu verdi; doygunluk, sakinleştirici/heyecanlandırıcı etkide renk tonundan daha belirleyici olabilir. **Kural:** duvar açık, düşük doygunlukta mercan; vurgular doygun mavi (kapı, tünel, gökyüzü), güneş sarısı (perde, halı, alt yazı), yeşil bitki.
+- Gri-mavi Coconut sarı halının üstünde durur (tamamlayıcı renk, figür-zemin ayrımı). Krem tasma artık krem tünelle karışmıyor (tünel mavi).
+- Katmanlar: pencere dışı gökyüzü odadan yavaş kayar, ön planda bulanık yaprak odadan hızlı kayar (paralaks). Yavaş canlılık: bulutlar, 9 sn'de bir geçen kuş, sallanan bitki ve perde, nefes alan güneş huzmesi. Coconut'ın yüzünün arkası sade.
+- Alt yazı artık tünelin üstüne yazılmıyor, üstte sarı bir şeritte.
+- Kaynaklar: [Boyatzis ve Varghese 1994](https://www.scinapse.io/papers/2072398537), [Frontiers 2023](https://pubmed.ncbi.nlm.nih.gov/38187438/), [Bilkent anaokulu sınıf çalışması](https://repository.bilkent.edu.tr/handle/11693/29152), [Chulalongkorn 4-5 yaş](https://cuir.car.chula.ac.th/handle/123456789/66364).
+
 ## Bilinen zayıf noktalarımız ve planı
 | Zayıf nokta | Plan |
 |---|---|
@@ -48,7 +57,7 @@ Kaynaklar (kendi cümlelerimle özetlendi, kopyalanmadı): Disney'in 12 prensibi
 | Yürüme / yan görünüş yok | Yan görünüş varlık seti + yürüme döngüsü (4 anahtar poz: temas, geçiş, tepe, geçiş) |
 | Ziyaretçi çocuk çok basit | Ayrı bir karakter kılavuzu + ifade seti |
 | Ses yok, ağız hareketi sahte | Gerçek ses + Rhubarb |
-| Sahne soluk (bej/krem, düşük doygunluk), boş duvar, ortam durağan | Sıcak canlı palet, 3 katman + ışık, pencerede bulut/kuş, bölüme göre atmosfer (bkz. `docs/BRIEF.md` ölçüt 4-9) |
+| ~~Sahne soluk, boş duvar, ortam durağan~~ | **Yapıldı (2026-10-12):** araştırmaya dayalı palet, 3 katman + ışık, bulut/kuş/bitki. Kalan: bölüme göre farklı atmosfer (gece, yağmur, yatak odası) |
 | Çeşitli ifadeler az | 5 ifade seti: ciddi, şaşkın, mutlu (kapalı göz), uykulu, meraklı |
 
 ## Gözden geçirme kontrol listesi (video göndermeden önce)

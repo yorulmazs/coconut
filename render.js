@@ -8,7 +8,7 @@ const path = require('path');
 const { spawnSync } = require('child_process');
 const { chromium } = require('playwright');
 const { coconutSVG } = require('./character/coconut');
-const { backgrounds, foregrounds, bubbleSVG, captionSVG, heartsSVG } = require('./scenes/room');
+const { backgrounds, foregrounds, nearLayerSVG, bubbleSVG, captionSVG, heartsSVG } = require('./scenes/room');
 
 // Every animatable track and its default value. Tracks are [[time, value], ...] keyframes in the episode JSON.
 const DEFAULTS = {
@@ -102,7 +102,7 @@ function frameState(ep, tracks, cues, blinkTimes, t, tailPhase) {
     bell: v('bell') + Math.sin(tailPhase * 1.3) * 3 + v('lookX') * 5 + nz * nuzzleWave * 0.5
   };
   const scene = {
-    t, doorOpen: v('doorOpen'), visitorX: v('visitorX'),
+    t, camX: v('camX'), doorOpen: v('doorOpen'), visitorX: v('visitorX'),
     visitorWave: v('visitorWave'), visitorWalk: v('visitorWalk')
   };
   const camera = { zoom: v('zoom'), x: v('camX'), y: v('camY') };
@@ -112,11 +112,14 @@ function frameState(ep, tracks, cues, blinkTimes, t, tailPhase) {
 function frameSVG(ep, bg, fg, st, t) {
   const bgSVG = typeof bg === 'function' ? bg(st.scene) : bg;
   const c = st.camera;
-  const cam = `translate(480,270) scale(${c.zoom}) translate(${-(480 + c.x)},${-(270 + c.y)})`;
+  // depth: 1 = the room; a near layer moves and zooms a bit more than the room (parallax)
+  const camAt = depth => `translate(480,270) scale(${1 + (c.zoom - 1) * depth}) translate(${-(480 + c.x * depth)},${-(270 + c.y * depth)})`;
+  const cam = camAt(1);
   const [bt, bo] = activeText(ep.bubbles, t);
   const [ct, co] = activeText(ep.captions, t, 0.3);
   return `<svg viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg">
     <g transform="${cam}">${bgSVG}${coconutSVG(st.params)}${fg}${heartsSVG(t, st.hearts)}</g>
+    <g transform="${camAt(1.3)}">${nearLayerSVG(t)}</g>
     ${bo > 0 ? bubbleSVG(bt, bo) : ''}${co > 0 ? captionSVG(ct, co) : ''}</svg>`;
 }
 
